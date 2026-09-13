@@ -1,0 +1,4360 @@
+{
+  "dataset_name": "Rawiyah Saudi Heritage — Curated 100",
+  "version": "3.0",
+  "language": "ar",
+  "last_verified": "2026-09-13",
+  "record_count": 100,
+  "purpose": "قاعدة معرفة موثقة لمشروع راوية. مصممة للاسترجاع ثم إعادة الصياغة، وليس لنسخ قصة جاهزة.",
+  "generation_policy": {
+    "use_for_retrieval": [
+      "name",
+      "aliases",
+      "tags",
+      "retrieval_terms",
+      "short_description",
+      "facts"
+    ],
+    "allowed_for_answer": [
+      "name",
+      "type",
+      "region",
+      "short_description",
+      "facts"
+    ],
+    "do_not_generate_from_memory": true,
+    "do_not_copy_story": true,
+    "source_display": "direct_from_dataset"
+  },
+  "source_policy": {
+    "priority": [
+      "UNESCO",
+      "Saudi national/official knowledge sources",
+      "Saudi Heritage Commission / SPA / King Abdulaziz Foundation as cited by Saudipedia"
+    ],
+    "rule": "أي معلومة جديدة غير موجودة في facts لا يضيفها النموذج من ذاكرته."
+  },
+  "items": [
+    {
+      "id": "at_turaif",
+      "name": "حي الطريف في الدرعية",
+      "type": "world_heritage_site",
+      "region": "الدرعية - منطقة الرياض",
+      "aliases": [
+        "حي الطريف",
+        "الطريف",
+        "At-Turaif",
+        "At-Turaif District"
+      ],
+      "tags": [
+        "حي الطريف في الدرعية",
+        "الرياض",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "حي تاريخي في قلب الدرعية، كان مركزًا للحكم في الدولة السعودية الأولى، وأدرجته اليونسكو على قائمة التراث العالمي عام 2010م.",
+      "facts": [
+        "يقع حي الطريف في قلب مدينة الدرعية بمنطقة الرياض.",
+        "ارتبط الحي بالدولة السعودية الأولى ومركز الحكم فيها.",
+        "يضم قصر سلوى الذي كان مقرًا للحكم في الدولة السعودية الأولى.",
+        "يضم جامع الطريف وعددًا من القصور والمباني التاريخية.",
+        "أدرج حي الطريف على قائمة التراث العالمي لليونسكو عام 2010م."
+      ],
+      "related": [
+        "diriyah",
+        "salwa_palace",
+        "first_saudi_state"
+      ],
+      "retrieval_terms": [
+        "حي الطريف في الدرعية",
+        "حي الطريف",
+        "الطريف",
+        "At-Turaif",
+        "At-Turaif District",
+        "الرياض",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "معلومات مطابقة لسعوديبيديا واليونسكو.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — حي الطريف",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/حي-الطريف",
+          "supports": [
+            "الموقع",
+            "المعالم",
+            "الدولة السعودية الأولى"
+          ]
+        },
+        {
+          "source_name": "UNESCO World Heritage Centre — At-Turaif",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/list/1329/",
+          "supports": [
+            "الإدراج عام 2010"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2010
+    },
+    {
+      "id": "ar_1a0ce33b86bb",
+      "name": "الحِجر (مدائن صالح)",
+      "type": "world_heritage_site",
+      "region": "العلا - منطقة المدينة المنورة",
+      "aliases": [],
+      "tags": [
+        "الحِجر (مدائن صالح)",
+        "العلا",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "موقع أثري في العلا وأول موقع سعودي أدرج على قائمة التراث العالمي.",
+      "facts": [
+        "أدرج على قائمة التراث العالمي لليونسكو عام 2008م.",
+        "مصدر التحقق: مركز التراث العالمي لليونسكو."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الحِجر (مدائن صالح)",
+        "العلا",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية لدى مركز التراث العالمي.",
+      "sources": [
+        {
+          "source_name": "UNESCO World Heritage Centre — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/statesparties/sa",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2008
+    },
+    {
+      "id": "ar_c1313b18b0b0",
+      "name": "جدة التاريخية، بوابة مكة",
+      "type": "world_heritage_site",
+      "region": "منطقة مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "جدة التاريخية، بوابة مكة",
+        "مكة المكرمة",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "منطقة تاريخية ارتبطت بدور جدة بوصفها ميناءً وبوابة للقادمين إلى مكة.",
+      "facts": [
+        "أدرج على قائمة التراث العالمي لليونسكو عام 2014م.",
+        "مصدر التحقق: مركز التراث العالمي لليونسكو."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "جدة التاريخية، بوابة مكة",
+        "مكة المكرمة",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية لدى مركز التراث العالمي.",
+      "sources": [
+        {
+          "source_name": "UNESCO World Heritage Centre — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/statesparties/sa",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2014
+    },
+    {
+      "id": "ar_2559b40e3039",
+      "name": "الفن الصخري في منطقة حائل",
+      "type": "world_heritage_site",
+      "region": "منطقة حائل",
+      "aliases": [],
+      "tags": [
+        "الفن الصخري في منطقة حائل",
+        "حائل",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "موقع تراث عالمي يضم فنونًا صخرية بارزة في منطقة حائل.",
+      "facts": [
+        "أدرج على قائمة التراث العالمي لليونسكو عام 2015م.",
+        "مصدر التحقق: مركز التراث العالمي لليونسكو."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الفن الصخري في منطقة حائل",
+        "حائل",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية لدى مركز التراث العالمي.",
+      "sources": [
+        {
+          "source_name": "UNESCO World Heritage Centre — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/statesparties/sa",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2015
+    },
+    {
+      "id": "ar_4285f4186426",
+      "name": "واحة الأحساء",
+      "type": "world_heritage_site",
+      "region": "المنطقة الشرقية",
+      "aliases": [],
+      "tags": [
+        "واحة الأحساء",
+        "المنطقة الشرقية",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "منظر ثقافي متطور يجمع بين الواحات والنشاط البشري في الأحساء.",
+      "facts": [
+        "أدرج على قائمة التراث العالمي لليونسكو عام 2018م.",
+        "مصدر التحقق: مركز التراث العالمي لليونسكو."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "واحة الأحساء",
+        "المنطقة الشرقية",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية لدى مركز التراث العالمي.",
+      "sources": [
+        {
+          "source_name": "UNESCO World Heritage Centre — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/statesparties/sa",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2018
+    },
+    {
+      "id": "ar_cbd083e27335",
+      "name": "منطقة حِمى الثقافية",
+      "type": "world_heritage_site",
+      "region": "منطقة نجران",
+      "aliases": [],
+      "tags": [
+        "منطقة حِمى الثقافية",
+        "نجران",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "منطقة ثقافية تضم نقوشًا وفنونًا صخرية مرتبطة بتاريخ طويل من النشاط البشري.",
+      "facts": [
+        "أدرج على قائمة التراث العالمي لليونسكو عام 2021م.",
+        "مصدر التحقق: مركز التراث العالمي لليونسكو."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "منطقة حِمى الثقافية",
+        "نجران",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية لدى مركز التراث العالمي.",
+      "sources": [
+        {
+          "source_name": "UNESCO World Heritage Centre — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/statesparties/sa",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2021
+    },
+    {
+      "id": "ar_10642846095c",
+      "name": "عروق بني معارض",
+      "type": "world_heritage_site",
+      "region": "منطقة نجران",
+      "aliases": [],
+      "tags": [
+        "عروق بني معارض",
+        "نجران",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "موقع طبيعي عالمي على الحافة الغربية للربع الخالي ويضم نظمًا صحراوية مميزة.",
+      "facts": [
+        "أدرج على قائمة التراث العالمي لليونسكو عام 2023م.",
+        "مصدر التحقق: مركز التراث العالمي لليونسكو."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "عروق بني معارض",
+        "نجران",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية لدى مركز التراث العالمي.",
+      "sources": [
+        {
+          "source_name": "UNESCO World Heritage Centre — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/statesparties/sa",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2023
+    },
+    {
+      "id": "ar_b459a57296c1",
+      "name": "المنظر الثقافي لمنطقة الفاو الأثرية",
+      "type": "world_heritage_site",
+      "region": "منطقة الرياض",
+      "aliases": [],
+      "tags": [
+        "المنظر الثقافي لمنطقة الفاو الأثرية",
+        "الرياض",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "short_description": "منظر ثقافي أثري عند طرق التجارة القديمة يضم بقايا أثرية متنوعة وموقع قرية الفاو.",
+      "facts": [
+        "أدرج على قائمة التراث العالمي لليونسكو عام 2024م.",
+        "مصدر التحقق: مركز التراث العالمي لليونسكو."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "المنظر الثقافي لمنطقة الفاو الأثرية",
+        "الرياض",
+        "اليونسكو",
+        "تراث عالمي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية لدى مركز التراث العالمي.",
+      "sources": [
+        {
+          "source_name": "UNESCO World Heritage Centre — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/statesparties/sa",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2024
+    },
+    {
+      "id": "ar_ccfa8d4bb586",
+      "name": "المجلس",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "المجلس",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2015م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "المجلس",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2015
+    },
+    {
+      "id": "ar_f7a4bffa847c",
+      "name": "العرضة النجدية: الرقص والطبول والشعر في السعودية",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "العرضة النجدية",
+        "نجد",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2015م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "العرضة النجدية: الرقص والطبول والشعر في السعودية",
+        "العرضة النجدية",
+        "نجد",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2015
+    },
+    {
+      "id": "ar_e028ade2071d",
+      "name": "المزمار: الضرب على الطبول والرقص بالعصي",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "المزمار",
+        "منطقة مكة المكرمة",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2016م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "المزمار: الضرب على الطبول والرقص بالعصي",
+        "المزمار",
+        "منطقة مكة المكرمة",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2016
+    },
+    {
+      "id": "ar_516e55a8aa77",
+      "name": "القط العسيري: الزخرفة الجدارية التقليدية النسائية في عسير",
+      "type": "intangible_heritage",
+      "region": "عسير",
+      "aliases": [],
+      "tags": [
+        "القط العسيري",
+        "عسير",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2017م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "القط العسيري: الزخرفة الجدارية التقليدية النسائية في عسير",
+        "القط العسيري",
+        "عسير",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2017
+    },
+    {
+      "id": "ar_d6de3fd07ad5",
+      "name": "الصقارة: تراث إنساني حي",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "الصقارة",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2021م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الصقارة: تراث إنساني حي",
+        "الصقارة",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2021
+    },
+    {
+      "id": "ar_2ff8f3119098",
+      "name": "الخط العربي: المعارف والمهارات والممارسات",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "الخط العربي",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2021م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الخط العربي: المعارف والمهارات والممارسات",
+        "الخط العربي",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2021
+    },
+    {
+      "id": "ar_ad6ed1354656",
+      "name": "الحداء: النداء الشفهي لقطعان الإبل",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "الحداء: النداء الشفهي لقطعان الإبل",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2022م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الحداء: النداء الشفهي لقطعان الإبل",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2022
+    },
+    {
+      "id": "ar_a0a5b2d0f785",
+      "name": "المعارف والممارسات المرتبطة بزراعة حبوب البن الخولاني",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "زراعة حبوب البن الخولاني",
+        "جازان",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2022م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "المعارف والممارسات المرتبطة بزراعة حبوب البن الخولاني",
+        "زراعة حبوب البن الخولاني",
+        "جازان",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2022
+    },
+    {
+      "id": "ar_e2d0ad2d3442",
+      "name": "النخلة: المعارف والمهارات والتقاليد والممارسات",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "النخلة: المعارف والمهارات والتقاليد والممارسات",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2022م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "النخلة: المعارف والمهارات والتقاليد والممارسات",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2022
+    },
+    {
+      "id": "ar_0177c38e8eb4",
+      "name": "طبق الهريس: المعارف والمهارات والممارسات",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "الحريس: المعارف والمهارات والممارسات",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2023م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "طبق الهريس: المعارف والمهارات والممارسات",
+        "الحريس: المعارف والمهارات والممارسات",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2023
+    },
+    {
+      "id": "ar_c18d63930a78",
+      "name": "فنون ومهارات وممارسات النقش على المعادن (الذهب والفضة والنحاس)",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "النقش على المعادن (الذهب والفضة والنحاس)",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2023م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "فنون ومهارات وممارسات النقش على المعادن (الذهب والفضة والنحاس)",
+        "النقش على المعادن (الذهب والفضة والنحاس)",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2023
+    },
+    {
+      "id": "ar_4d6250f286b8",
+      "name": "القهوة العربية: رمز للكرم",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "القهوة العربية رمزًا للكرم",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2024م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "القهوة العربية: رمز للكرم",
+        "القهوة العربية رمزًا للكرم",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2024
+    },
+    {
+      "id": "ar_ef39166c6ff7",
+      "name": "الممارسات الثقافية المرتبطة بورد الطائف",
+      "type": "intangible_heritage",
+      "region": "الطائف",
+      "aliases": [],
+      "tags": [
+        "الممارسات الثقافية المرتبطة بورد الطائف",
+        "الطائف",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2024م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الممارسات الثقافية المرتبطة بورد الطائف",
+        "الطائف",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2024
+    },
+    {
+      "id": "ar_1d094f57ba13",
+      "name": "الحناء: الطقوس والممارسات الجمالية والاجتماعية",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "الحناء: الطقوس والممارسات الجمالية والاجتماعية",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2024م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الحناء: الطقوس والممارسات الجمالية والاجتماعية",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2024
+    },
+    {
+      "id": "ar_476fc8b73104",
+      "name": "السمسمية: صناعة الآلة والعزف عليها",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "السمسمية: صناعة الآلة والعزف عليها",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2024م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "السمسمية: صناعة الآلة والعزف عليها",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2024
+    },
+    {
+      "id": "ar_7fbe8e21b19e",
+      "name": "الكحل العربي",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "الكحل العربي",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2025م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الكحل العربي",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2025
+    },
+    {
+      "id": "ar_8a5d0e4c3a3a",
+      "name": "البشت (العباءة الرجالية): المهارات والممارسات",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "البشت (العباءة الرجالية): المهارات والممارسات",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2025م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "البشت (العباءة الرجالية): المهارات والممارسات",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2025
+    },
+    {
+      "id": "ar_514656175723",
+      "name": "حياكة السدو التقليدية",
+      "type": "intangible_heritage",
+      "region": "المملكة العربية السعودية",
+      "aliases": [],
+      "tags": [
+        "حياكة السدو التقليدية",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "short_description": "عنصر من التراث الثقافي غير المادي المرتبط بالسعودية والمسجل لدى اليونسكو.",
+      "facts": [
+        "تظهره صفحة السعودية لدى اليونسكو ضمن العناصر المدرجة لعام 2025م.",
+        "يمثل معرفة أو ممارسة أو مهارة ثقافية تنتقل داخل المجتمع."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "حياكة السدو التقليدية",
+        "المملكة العربية السعودية",
+        "تراث غير مادي",
+        "اليونسكو"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الاسم وسنة الإدراج مذكوران صراحة في قائمة السعودية للتراث الثقافي غير المادي.",
+      "sources": [
+        {
+          "source_name": "UNESCO Intangible Cultural Heritage — Saudi Arabia",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://ich.unesco.org/en/state/saudi-arabia-SA?cp=SA&topic=ar-state",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ],
+      "unesco_inscription_year": 2025
+    },
+    {
+      "id": "masmak_palace",
+      "name": "قصر المصمك",
+      "type": "historical_palace_or_building",
+      "region": "مدينة الرياض - منطقة الرياض",
+      "aliases": [
+        "المصمك",
+        "المسمك",
+        "Masmak Palace",
+        "Masmak Fort"
+      ],
+      "tags": [
+        "قصر المصمك",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "حصن تاريخي في مدينة الرياض، شُيد في القرن التاسع عشر وارتبط بمعركة استعادة الرياض عام 1902م.",
+      "facts": [
+        "يقع قصر المصمك في مدينة الرياض.",
+        "شُيد في عهد الإمام عبدالله بن فيصل بن تركي عام 1282هـ/1865م.",
+        "يرتبط القصر بمعركة استعادة الرياض بقيادة الملك عبدالعزيز عام 1902م.",
+        "بُني القصر ليكون قلعة حصينة لحماية مدينة الرياض.",
+        "تحول القصر لاحقًا إلى معلم تاريخي ومتحف."
+      ],
+      "related": [
+        "king_abdulaziz",
+        "recapture_riyadh",
+        "unification_saudi_arabia"
+      ],
+      "retrieval_terms": [
+        "قصر المصمك",
+        "المصمك",
+        "المسمك",
+        "Masmak Palace",
+        "Masmak Fort",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الموقع والبناء والدور التاريخي مستندة إلى هيئة التراث وواس كما تنقلها سعوديبيديا.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قصر المصمك",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/ما-سبب-تسمية-قصر-المصمك؟",
+          "supports": [
+            "الموقع",
+            "البناء",
+            "استعادة الرياض",
+            "الوظيفة الدفاعية"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_2fdd518e8659",
+      "name": "قصر المربع",
+      "type": "historical_palace_or_building",
+      "region": "الرياض",
+      "aliases": [
+        "المربع",
+        "قصر الملك عبدالعزيز",
+        "Murabba Palace"
+      ],
+      "tags": [
+        "قصر المربع",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "قصر تاريخي في الرياض ارتبط بالملك عبدالعزيز وبإدارة شؤون الدولة في مرحلة مبكرة من تاريخ المملكة.",
+      "facts": [
+        "يقع قصر المربع في مدينة الرياض.",
+        "انتقل الملك عبدالعزيز إلى القصر في أواخر ثلاثينيات القرن العشرين.",
+        "كان للقصر دور في إدارة شؤون الدولة وصدور عدد من الأنظمة والقرارات.",
+        "يرتبط القصر بمركز الملك عبدالعزيز التاريخي."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر المربع",
+        "المربع",
+        "قصر الملك عبدالعزيز",
+        "Murabba Palace",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "مطابق لصفحة قصر المربع في سعوديبيديا.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قصر المربع",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قصر-المربع",
+          "supports": [
+            "الموقع",
+            "الملك عبدالعزيز",
+            "الدور الإداري"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_e3ecdbdfcdcb",
+      "name": "قصر الملك عبدالعزيز في البديعة",
+      "type": "historical_palace_or_building",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "قصر الملك عبدالعزيز في البديعة",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في الرياض ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق الرياض.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر الملك عبدالعزيز في البديعة",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_800001fcf01e",
+      "name": "قصر الملك عبدالعزيز في الدوادمي",
+      "type": "historical_palace_or_building",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "قصر الملك عبدالعزيز في الدوادمي",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في الرياض ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق الرياض.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر الملك عبدالعزيز في الدوادمي",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_6d011b4ecfad",
+      "name": "قصر الملك عبدالعزيز في الخرج",
+      "type": "historical_palace_or_building",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "قصر الملك عبدالعزيز في الخرج",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في الرياض ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق الرياض.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر الملك عبدالعزيز في الخرج",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_d68b722c3a09",
+      "name": "قصر أبو جفان",
+      "type": "historical_palace_or_building",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "قصر أبو جفان",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في الرياض ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق الرياض.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر أبو جفان",
+        "الرياض",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_120e90482c60",
+      "name": "قصر الزاهر",
+      "type": "historical_palace_or_building",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "قصر الزاهر",
+        "مكة المكرمة",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في مكة المكرمة ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق مكة المكرمة.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر الزاهر",
+        "مكة المكرمة",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_296aa477b064",
+      "name": "القصر الملكي في المعابدة",
+      "type": "historical_palace_or_building",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "القصر الملكي في المعابدة",
+        "مكة المكرمة",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في مكة المكرمة ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق مكة المكرمة.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "القصر الملكي في المعابدة",
+        "مكة المكرمة",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_7c9c8607b1fe",
+      "name": "قصر شبرا",
+      "type": "historical_palace_or_building",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "قصر شبرا",
+        "مكة المكرمة",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في مكة المكرمة ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق مكة المكرمة.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر شبرا",
+        "مكة المكرمة",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_52169b9bca42",
+      "name": "قصر شدا",
+      "type": "historical_palace_or_building",
+      "region": "عسير",
+      "aliases": [],
+      "tags": [
+        "قصر شدا",
+        "عسير",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في عسير ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق عسير.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر شدا",
+        "عسير",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_841d99acf71f",
+      "name": "قصر الإمارة في الرس",
+      "type": "historical_palace_or_building",
+      "region": "القصيم",
+      "aliases": [],
+      "tags": [
+        "قصر الإمارة في الرس",
+        "القصيم",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في القصيم ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق القصيم.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر الإمارة في الرس",
+        "القصيم",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_467d9f5286c5",
+      "name": "مبنى القشلة",
+      "type": "historical_palace_or_building",
+      "region": "حائل",
+      "aliases": [],
+      "tags": [
+        "مبنى القشلة",
+        "حائل",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في حائل ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق حائل.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "مبنى القشلة",
+        "حائل",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_d02db05dcd8e",
+      "name": "قصر الإمارة في نجران (قصر بن ماضي)",
+      "type": "historical_palace_or_building",
+      "region": "نجران",
+      "aliases": [],
+      "tags": [
+        "قصر الإمارة في نجران (قصر بن ماضي)",
+        "نجران",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في نجران ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق نجران.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قصر الإمارة في نجران (قصر بن ماضي)",
+        "نجران",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_40e0bdac94ae",
+      "name": "قلعة الملك عبدالعزيز في ضباء",
+      "type": "historical_palace_or_building",
+      "region": "تبوك",
+      "aliases": [],
+      "tags": [
+        "قلعة الملك عبدالعزيز في ضباء",
+        "تبوك",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في تبوك ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق تبوك.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة الملك عبدالعزيز في ضباء",
+        "تبوك",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_fa7b701db303",
+      "name": "قلعة الملك عبدالعزيز في حقل",
+      "type": "historical_palace_or_building",
+      "region": "تبوك",
+      "aliases": [],
+      "tags": [
+        "قلعة الملك عبدالعزيز في حقل",
+        "تبوك",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "short_description": "معلم تاريخي في تبوك ورد ضمن قائمة سعوديبيديا للقصور والمباني التاريخية في السعودية.",
+      "facts": [
+        "يقع ضمن نطاق تبوك.",
+        "موثق ضمن قائمة وطنية للقصور التاريخية."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة الملك عبدالعزيز في حقل",
+        "تبوك",
+        "قصر تاريخي",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قصور تاريخية في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قصور-تاريخية-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_9098e60f697b",
+      "name": "قلعة الإمام تركي بن عبدالله في الحلوة",
+      "type": "fort_or_tower",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "قلعة الإمام تركي بن عبدالله في الحلوة",
+        "الرياض",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في الرياض موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في الرياض.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة الإمام تركي بن عبدالله في الحلوة",
+        "الرياض",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_ea003d3bd016",
+      "name": "برج مرقب رغبة التاريخي",
+      "type": "fort_or_tower",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "برج مرقب رغبة التاريخي",
+        "الرياض",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في الرياض موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في الرياض.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "برج مرقب رغبة التاريخي",
+        "الرياض",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_b6c9f624e8b1",
+      "name": "برج قصبة العوص",
+      "type": "fort_or_tower",
+      "region": "عسير",
+      "aliases": [],
+      "tags": [
+        "برج قصبة العوص",
+        "عسير",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في عسير موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في عسير.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "برج قصبة العوص",
+        "عسير",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_19e46388fa28",
+      "name": "قلعة شمسان",
+      "type": "fort_or_tower",
+      "region": "عسير",
+      "aliases": [],
+      "tags": [
+        "قلعة شمسان",
+        "عسير",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في عسير موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في عسير.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة شمسان",
+        "عسير",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_6a7a82a7f542",
+      "name": "برج الشنانة",
+      "type": "fort_or_tower",
+      "region": "القصيم",
+      "aliases": [],
+      "tags": [
+        "برج الشنانة",
+        "القصيم",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في القصيم موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في القصيم.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "برج الشنانة",
+        "القصيم",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_7c077c8d8f58",
+      "name": "قلعة الدوسرية",
+      "type": "fort_or_tower",
+      "region": "جازان",
+      "aliases": [],
+      "tags": [
+        "قلعة الدوسرية",
+        "جازان",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في جازان موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في جازان.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة الدوسرية",
+        "جازان",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_af5d0835e406",
+      "name": "قلعة العينة",
+      "type": "fort_or_tower",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "قلعة العينة",
+        "مكة المكرمة",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في مكة المكرمة موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في مكة المكرمة.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة العينة",
+        "مكة المكرمة",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_9be6f1762673",
+      "name": "القلعة العثمانية بجزيرة فرسان",
+      "type": "fort_or_tower",
+      "region": "جازان",
+      "aliases": [],
+      "tags": [
+        "القلعة العثمانية بجزيرة فرسان",
+        "جازان",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في جازان موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في جازان.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "القلعة العثمانية بجزيرة فرسان",
+        "جازان",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_f5b289813fb4",
+      "name": "قلعة تاروت",
+      "type": "fort_or_tower",
+      "region": "المنطقة الشرقية",
+      "aliases": [],
+      "tags": [
+        "قلعة تاروت",
+        "المنطقة الشرقية",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في المنطقة الشرقية موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في المنطقة الشرقية.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة تاروت",
+        "المنطقة الشرقية",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_d270f75d34fd",
+      "name": "قلعة دارين",
+      "type": "fort_or_tower",
+      "region": "المنطقة الشرقية",
+      "aliases": [],
+      "tags": [
+        "قلعة دارين",
+        "المنطقة الشرقية",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في المنطقة الشرقية موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في المنطقة الشرقية.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة دارين",
+        "المنطقة الشرقية",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_4cd9fc3c60df",
+      "name": "قلعة العقير التاريخية",
+      "type": "fort_or_tower",
+      "region": "المنطقة الشرقية",
+      "aliases": [],
+      "tags": [
+        "قلعة العقير التاريخية",
+        "المنطقة الشرقية",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "short_description": "قلعة أو حصن أو برج تاريخي في المنطقة الشرقية موثق ضمن قائمة وطنية للمنشآت الدفاعية التاريخية.",
+      "facts": [
+        "يقع في المنطقة الشرقية.",
+        "ورد ضمن قائمة سعوديبيديا للقلاع والحصون والأبراج التاريخية البارزة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة العقير التاريخية",
+        "المنطقة الشرقية",
+        "قلعة",
+        "حصن",
+        "برج",
+        "تراث عمراني"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قلاع وحصون وأبراج تاريخية بارزة في السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قلاع-وحصون-وأبراج-تاريخية-بارزة-في-السعودية",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_f247db58dd78",
+      "name": "واحة دومة الجندل",
+      "type": "archaeological_site",
+      "region": "الجوف",
+      "aliases": [],
+      "tags": [
+        "واحة دومة الجندل",
+        "الجوف",
+        "آثار"
+      ],
+      "short_description": "واحة تاريخية تضم معالم مثل قلعة مارد ومسجد عمر بن الخطاب وحي الدرع.",
+      "facts": [
+        "واحة تاريخية تضم معالم مثل قلعة مارد ومسجد عمر بن الخطاب وحي الدرع.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الجوف."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "واحة دومة الجندل",
+        "الجوف",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة عشرة مواقع أثرية في منطقة الجوف",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-عشرة-مواقع-أثرية-في-منطقة-الجوف",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_1fcb943ec6e6",
+      "name": "موقع الشويحطية",
+      "type": "archaeological_site",
+      "region": "الجوف",
+      "aliases": [],
+      "tags": [
+        "موقع الشويحطية",
+        "الجوف",
+        "آثار"
+      ],
+      "short_description": "موقع أثري شمالي سكاكا عُثر فيه على أدوات حجرية قديمة.",
+      "facts": [
+        "موقع أثري شمالي سكاكا عُثر فيه على أدوات حجرية قديمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الجوف."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "موقع الشويحطية",
+        "الجوف",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة عشرة مواقع أثرية في منطقة الجوف",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-عشرة-مواقع-أثرية-في-منطقة-الجوف",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_08aaee34bc7c",
+      "name": "أعمدة الرجاجيل",
+      "type": "archaeological_site",
+      "region": "الجوف",
+      "aliases": [],
+      "tags": [
+        "أعمدة الرجاجيل",
+        "الجوف",
+        "آثار"
+      ],
+      "short_description": "مجموعات من الأعمدة الحجرية المنتصبة قرب سكاكا.",
+      "facts": [
+        "مجموعات من الأعمدة الحجرية المنتصبة قرب سكاكا.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الجوف."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "أعمدة الرجاجيل",
+        "الجوف",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة عشرة مواقع أثرية في منطقة الجوف",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-عشرة-مواقع-أثرية-في-منطقة-الجوف",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_ee03e01bd44b",
+      "name": "موقع منحوتات الجمال",
+      "type": "archaeological_site",
+      "region": "الجوف",
+      "aliases": [],
+      "tags": [
+        "موقع منحوتات الجمال",
+        "الجوف",
+        "آثار"
+      ],
+      "short_description": "موقع يضم منحوتات مجسمة لحيوانات بالحجم الطبيعي.",
+      "facts": [
+        "موقع يضم منحوتات مجسمة لحيوانات بالحجم الطبيعي.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الجوف."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "موقع منحوتات الجمال",
+        "الجوف",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة عشرة مواقع أثرية في منطقة الجوف",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-عشرة-مواقع-أثرية-في-منطقة-الجوف",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_7e4fc4071f6b",
+      "name": "قلعة زعبل",
+      "type": "archaeological_site",
+      "region": "الجوف",
+      "aliases": [],
+      "tags": [
+        "قلعة زعبل",
+        "الجوف",
+        "آثار"
+      ],
+      "short_description": "قلعة تاريخية شمالي سكاكا شُيدت على قمة جبل صخري.",
+      "facts": [
+        "قلعة تاريخية شمالي سكاكا شُيدت على قمة جبل صخري.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الجوف."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة زعبل",
+        "الجوف",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة عشرة مواقع أثرية في منطقة الجوف",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-عشرة-مواقع-أثرية-في-منطقة-الجوف",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_7ead336ada79",
+      "name": "قلعة مارد",
+      "type": "archaeological_site",
+      "region": "الجوف",
+      "aliases": [],
+      "tags": [
+        "قلعة مارد",
+        "الجوف",
+        "آثار"
+      ],
+      "short_description": "قلعة تاريخية في دومة الجندل تشير آثار الموقع إلى فترات نبطية ورومانية وأقدم.",
+      "facts": [
+        "قلعة تاريخية في دومة الجندل تشير آثار الموقع إلى فترات نبطية ورومانية وأقدم.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الجوف."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة مارد",
+        "الجوف",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة عشرة مواقع أثرية في منطقة الجوف",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-عشرة-مواقع-أثرية-في-منطقة-الجوف",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_3d9966714861",
+      "name": "بلدة أشيقر التراثية",
+      "type": "heritage_town",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "بلدة أشيقر التراثية",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "short_description": "بلدة تراثية في محافظة شقراء مبنية بمواد محلية، وتضم بيوتًا ومساجد قديمة.",
+      "facts": [
+        "بلدة تراثية في محافظة شقراء مبنية بمواد محلية، وتضم بيوتًا ومساجد قديمة.",
+        "موثقة ضمن قائمة القرى والبلدات التراثية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "بلدة أشيقر التراثية",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة أربع قرى وبلدات تراثية بمنطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-أربع-قرى-وبلدات-تراثية-بمنطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_4455c9dc9d37",
+      "name": "البلدة التراثية في شقراء",
+      "type": "heritage_town",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "البلدة التراثية في شقراء",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "short_description": "بلدة تمثل نمط المدن النجدية التقليدية بمساجدها وأسواقها وبيوتها.",
+      "facts": [
+        "بلدة تمثل نمط المدن النجدية التقليدية بمساجدها وأسواقها وبيوتها.",
+        "موثقة ضمن قائمة القرى والبلدات التراثية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "البلدة التراثية في شقراء",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة أربع قرى وبلدات تراثية بمنطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-أربع-قرى-وبلدات-تراثية-بمنطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_1b2a7529468c",
+      "name": "بلدة سدوس التراثية",
+      "type": "heritage_town",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "بلدة سدوس التراثية",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "short_description": "بلدة تراثية شمال غربي الرياض لها سور وأبراج ومعالم من العمارة التقليدية.",
+      "facts": [
+        "بلدة تراثية شمال غربي الرياض لها سور وأبراج ومعالم من العمارة التقليدية.",
+        "موثقة ضمن قائمة القرى والبلدات التراثية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "بلدة سدوس التراثية",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة أربع قرى وبلدات تراثية بمنطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-أربع-قرى-وبلدات-تراثية-بمنطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_612fc3251cac",
+      "name": "البلدة التراثية في الغاط",
+      "type": "heritage_town",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "البلدة التراثية في الغاط",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "short_description": "بلدة تراثية على الطراز النجدي تضم بيوتًا طينية ومساجد ومعالم تاريخية.",
+      "facts": [
+        "بلدة تراثية على الطراز النجدي تضم بيوتًا طينية ومساجد ومعالم تاريخية.",
+        "موثقة ضمن قائمة القرى والبلدات التراثية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "البلدة التراثية في الغاط",
+        "الرياض",
+        "قرية تراثية",
+        "عمارة نجدية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة أربع قرى وبلدات تراثية بمنطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-أربع-قرى-وبلدات-تراثية-بمنطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_4d847b8dbba2",
+      "name": "قرية ذي عين",
+      "type": "heritage_village",
+      "region": "الباحة",
+      "aliases": [],
+      "tags": [
+        "قرية ذي عين",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "short_description": "قرية تراثية في المخواة مبنية على تل من المرمر الأبيض وتضم بيوتًا حجرية ومدرجات زراعية.",
+      "facts": [
+        "قرية تراثية في المخواة مبنية على تل من المرمر الأبيض وتضم بيوتًا حجرية ومدرجات زراعية.",
+        "موثقة ضمن قائمة قرى تراثية في منطقة الباحة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قرية ذي عين",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قرى تراثية في منطقة الباحة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قرى-تراثية-في-منطقة-الباحة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_49d514974828",
+      "name": "قرية الأطاولة",
+      "type": "heritage_village",
+      "region": "الباحة",
+      "aliases": [],
+      "tags": [
+        "قرية الأطاولة",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "short_description": "قرية تراثية شمالي الباحة تضم مباني وحصونًا بتصاميم تراثية.",
+      "facts": [
+        "قرية تراثية شمالي الباحة تضم مباني وحصونًا بتصاميم تراثية.",
+        "موثقة ضمن قائمة قرى تراثية في منطقة الباحة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قرية الأطاولة",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قرى تراثية في منطقة الباحة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قرى-تراثية-في-منطقة-الباحة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_231d7a7a5e99",
+      "name": "قرية بران",
+      "type": "heritage_village",
+      "region": "الباحة",
+      "aliases": [],
+      "tags": [
+        "قرية بران",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "short_description": "قرية قديمة تتكون من مبانٍ حجرية متعددة الطوابق.",
+      "facts": [
+        "قرية قديمة تتكون من مبانٍ حجرية متعددة الطوابق.",
+        "موثقة ضمن قائمة قرى تراثية في منطقة الباحة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قرية بران",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قرى تراثية في منطقة الباحة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قرى-تراثية-في-منطقة-الباحة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_e4f9fa70f43f",
+      "name": "قرية السواد",
+      "type": "heritage_village",
+      "region": "الباحة",
+      "aliases": [],
+      "tags": [
+        "قرية السواد",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "short_description": "قرية تراثية على تلة في جبال السروات تتراص بيوتها حول ممرات ضيقة.",
+      "facts": [
+        "قرية تراثية على تلة في جبال السروات تتراص بيوتها حول ممرات ضيقة.",
+        "موثقة ضمن قائمة قرى تراثية في منطقة الباحة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قرية السواد",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قرى تراثية في منطقة الباحة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قرى-تراثية-في-منطقة-الباحة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_43dabe286ea9",
+      "name": "قرية الزناد",
+      "type": "heritage_village",
+      "region": "الباحة",
+      "aliases": [],
+      "tags": [
+        "قرية الزناد",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "short_description": "قرية تراثية في محافظة غامد الزناد مبنية بالحجارة على الطراز المعماري الجنوبي.",
+      "facts": [
+        "قرية تراثية في محافظة غامد الزناد مبنية بالحجارة على الطراز المعماري الجنوبي.",
+        "موثقة ضمن قائمة قرى تراثية في منطقة الباحة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قرية الزناد",
+        "الباحة",
+        "قرية تراثية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة قرى تراثية في منطقة الباحة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-قرى-تراثية-في-منطقة-الباحة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_b547344f2857",
+      "name": "موقع المقر الأثري",
+      "type": "archaeological_site",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "موقع المقر الأثري",
+        "الرياض",
+        "آثار"
+      ],
+      "short_description": "موقع قرب وادي الدواسر تظهر فيه شواهد من العصر الحجري الحديث.",
+      "facts": [
+        "موقع قرب وادي الدواسر تظهر فيه شواهد من العصر الحجري الحديث.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "موقع المقر الأثري",
+        "الرياض",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة خمسة مواقع أثرية في منطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-خمسة-مواقع-أثرية-في-منطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_660bc8fbf83e",
+      "name": "مسجد اليمامة الأثري",
+      "type": "archaeological_site",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "مسجد اليمامة الأثري",
+        "الرياض",
+        "آثار"
+      ],
+      "short_description": "مسجد أثري في محافظة الخرج يعود إلى الفترة الإسلامية المبكرة.",
+      "facts": [
+        "مسجد أثري في محافظة الخرج يعود إلى الفترة الإسلامية المبكرة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "مسجد اليمامة الأثري",
+        "الرياض",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة خمسة مواقع أثرية في منطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-خمسة-مواقع-أثرية-في-منطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_d9abf881847a",
+      "name": "الدروب الحجرية في جبال طويق",
+      "type": "archaeological_site",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "الدروب الحجرية في جبال طويق",
+        "الرياض",
+        "آثار"
+      ],
+      "short_description": "دروب حجرية تاريخية في جبال طويق، من أشهرها درب أبا القد.",
+      "facts": [
+        "دروب حجرية تاريخية في جبال طويق، من أشهرها درب أبا القد.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الدروب الحجرية في جبال طويق",
+        "الرياض",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة خمسة مواقع أثرية في منطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-خمسة-مواقع-أثرية-في-منطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_99331f142d4f",
+      "name": "موقع الحني الأثري",
+      "type": "archaeological_site",
+      "region": "الرياض",
+      "aliases": [],
+      "tags": [
+        "موقع الحني الأثري",
+        "الرياض",
+        "آثار"
+      ],
+      "short_description": "موقع يعود إلى العصر الإسلامي المبكر وكشفت التنقيبات فيه عن مستوطنة من العصر العباسي المبكر.",
+      "facts": [
+        "موقع يعود إلى العصر الإسلامي المبكر وكشفت التنقيبات فيه عن مستوطنة من العصر العباسي المبكر.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة الرياض."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "موقع الحني الأثري",
+        "الرياض",
+        "آثار"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة خمسة مواقع أثرية في منطقة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-خمسة-مواقع-أثرية-في-منطقة-الرياض",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_2677a683eb97",
+      "name": "جبل النور",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "جبل النور",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "جبل تاريخي في مكة يرتبط بغار حراء.",
+      "facts": [
+        "جبل تاريخي في مكة يرتبط بغار حراء.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "جبل النور",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_dae2bc3376ad",
+      "name": "غار حراء",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "غار حراء",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي في جبل النور.",
+      "facts": [
+        "موقع تاريخي في جبل النور.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "غار حراء",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_ee7b2d1304cc",
+      "name": "جبل ثور",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "جبل ثور",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "جبل تاريخي في مكة مرتبط بأحداث الهجرة.",
+      "facts": [
+        "جبل تاريخي في مكة مرتبط بأحداث الهجرة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "جبل ثور",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_5f590ad18a74",
+      "name": "موقع خيمة أم معبد",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "موقع خيمة أم معبد",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي ورد ضمن آثار السيرة النبوية في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي ورد ضمن آثار السيرة النبوية في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "موقع خيمة أم معبد",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_520ab3f38162",
+      "name": "موقع الأبواء",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "موقع الأبواء",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي على طرق قديمة في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي على طرق قديمة في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "موقع الأبواء",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_43dee8113223",
+      "name": "الحديبية",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "الحديبية",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الحديبية",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_e3936f4d6a3f",
+      "name": "عسفان التاريخية",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "عسفان التاريخية",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي في منطقة مكة المكرمة ارتبط بالطرق والقوافل.",
+      "facts": [
+        "موقع تاريخي في منطقة مكة المكرمة ارتبط بالطرق والقوافل.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "عسفان التاريخية",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_f08bbc683f4e",
+      "name": "الجحفة",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "الجحفة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي قديم في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي قديم في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الجحفة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_c57b7c377853",
+      "name": "بئر طوى",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "بئر طوى",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "بئر تاريخية في مكة المكرمة.",
+      "facts": [
+        "بئر تاريخية في مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "بئر طوى",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_e671c9e24b74",
+      "name": "وادي حنين",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "وادي حنين",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "وادٍ تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "وادٍ تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "وادي حنين",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_89bd6284f1e4",
+      "name": "الجعرانة",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "الجعرانة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "الجعرانة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_b02181597ffb",
+      "name": "أوطاس",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "أوطاس",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي ورد ضمن قائمة آثار السيرة في المنطقة.",
+      "facts": [
+        "موقع تاريخي ورد ضمن قائمة آثار السيرة في المنطقة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "أوطاس",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_0c36968c6846",
+      "name": "قرن المنازل",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "قرن المنازل",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قرن المنازل",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_55d222a7d16f",
+      "name": "يلملم",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "يلملم",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "يلملم",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_4dd737f838ff",
+      "name": "ذات عرق",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "ذات عرق",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "موقع تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "موقع تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "ذات عرق",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_af7c23065846",
+      "name": "مسجد البيعة",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "مسجد البيعة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "مسجد تاريخي في مكة المكرمة.",
+      "facts": [
+        "مسجد تاريخي في مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "مسجد البيعة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_6e13a827898a",
+      "name": "مسجد الجن",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "مسجد الجن",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "مسجد تاريخي في مكة المكرمة.",
+      "facts": [
+        "مسجد تاريخي في مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "مسجد الجن",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_47b9839b5500",
+      "name": "مسجد عائشة (التنعيم)",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "مسجد عائشة (التنعيم)",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "مسجد تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "مسجد تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "مسجد عائشة (التنعيم)",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_852a59c9371d",
+      "name": "مسجد الإجابة",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "مسجد الإجابة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "مسجد تاريخي في منطقة مكة المكرمة.",
+      "facts": [
+        "مسجد تاريخي في منطقة مكة المكرمة.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "مسجد الإجابة",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar_e9401a8caab9",
+      "name": "قلعة عسفان",
+      "type": "historical_or_archaeological_place",
+      "region": "مكة المكرمة",
+      "aliases": [],
+      "tags": [
+        "قلعة عسفان",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "short_description": "قلعة تاريخية شُيدت لحماية الطرق وقوافل التجارة والحجاج.",
+      "facts": [
+        "قلعة تاريخية شُيدت لحماية الطرق وقوافل التجارة والحجاج.",
+        "موثق ضمن قائمة سعوديبيديا للمواقع الأثرية في منطقة مكة المكرمة."
+      ],
+      "related": [],
+      "retrieval_terms": [
+        "قلعة عسفان",
+        "مكة المكرمة",
+        "موقع تاريخي"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A/B",
+      "verification_note": "الاسم مذكور صراحة في صفحة سعوديبيديا المصدر أو ضمن فقرة/قائمة واضحة فيها؛ الوصف مقيد بما تدعمه الصفحة.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قائمة مواقع أثرية في منطقة مكة المكرمة",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قائمة-مواقع-أثرية-في-منطقة-مكة-المكرمة",
+          "supports": [
+            "وجود/اسم العنصر في المصدر",
+            "التصنيف أو السياق العام",
+            "المعلومات الوصفية المحافظة الواردة في السجل"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diriyah",
+      "name": "الدرعية",
+      "type": "historical_place",
+      "region": "منطقة الرياض",
+      "aliases": [
+        "الدرعيه",
+        "Diriyah",
+        "ad-Diriyah"
+      ],
+      "tags": [
+        "الدرعية",
+        "وادي حنيفة",
+        "الدولة السعودية الأولى",
+        "حي الطريف",
+        "آل سعود"
+      ],
+      "short_description": "مدينة تاريخية في منطقة الرياض، أسسها مانع المريدي عام 1446م، ثم أصبحت عاصمة الدولة السعودية الأولى التي أسسها الإمام محمد بن سعود عام 1727م.",
+      "facts": [
+        "تتبع الدرعية إداريًا لمنطقة الرياض وتقع شمال غرب مدينة الرياض.",
+        "أسس مانع المريدي الدرعية عام 850هـ/1446م.",
+        "أصبحت الدرعية عاصمة الدولة السعودية الأولى التي أسسها الإمام محمد بن سعود عام 1139هـ/1727م.",
+        "تضم الدرعية حي الطريف التاريخي المسجل على قائمة التراث العالمي لليونسكو.",
+        "تقع الدرعية ضمن نطاق وادي حنيفة."
+      ],
+      "related": [
+        "at_turaif",
+        "salwa_palace",
+        "imam_mohammed_bin_saud",
+        "founding_day_saudi"
+      ],
+      "retrieval_terms": [
+        "الدرعية",
+        "الدرعيه",
+        "Diriyah",
+        "ad-Diriyah",
+        "وادي حنيفة",
+        "الدولة السعودية الأولى",
+        "حي الطريف",
+        "آل سعود"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "حقائق أساسية مطابقة لصفحة محافظة الدرعية في سعوديبيديا، مع الاستناد إلى اليونسكو لحي الطريف.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — محافظة الدرعية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/محافظة-الدرعية",
+          "supports": [
+            "التأسيس",
+            "الموقع",
+            "الدولة السعودية الأولى",
+            "حي الطريف"
+          ]
+        },
+        {
+          "source_name": "UNESCO World Heritage Centre — At-Turaif",
+          "source_type": "United Nations specialized agency",
+          "source_url": "https://whc.unesco.org/en/list/1329/",
+          "supports": [
+            "تسجيل حي الطريف"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salwa_palace",
+      "name": "قصر سلوى",
+      "type": "historical_palace_or_building",
+      "region": "الدرعية - منطقة الرياض",
+      "aliases": [
+        "قصر سلوى التاريخي",
+        "Salwa Palace"
+      ],
+      "tags": [
+        "قصر سلوى",
+        "حي الطريف",
+        "الدرعية",
+        "الدولة السعودية الأولى",
+        "قصر الحكم"
+      ],
+      "short_description": "قصر تاريخي داخل حي الطريف في الدرعية، كان مقرًا للحكم في عصر الدولة السعودية الأولى.",
+      "facts": [
+        "يقع قصر سلوى داخل حي الطريف التاريخي في الدرعية.",
+        "كان قصر سلوى مقرًا للحكم في عصر الدولة السعودية الأولى.",
+        "بدأ بناؤه عام 1179هـ/1765م في عهد الإمام عبدالعزيز بن محمد بن سعود.",
+        "تبلغ مساحته نحو عشرة آلاف متر مربع.",
+        "يتكون القصر من سبع وحدات معمارية."
+      ],
+      "related": [
+        "diriyah",
+        "at_turaif",
+        "first_saudi_state"
+      ],
+      "retrieval_terms": [
+        "قصر سلوى",
+        "قصر سلوى التاريخي",
+        "Salwa Palace",
+        "حي الطريف",
+        "الدرعية",
+        "الدولة السعودية الأولى",
+        "قصر الحكم"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الموقع والدور والتاريخ والخصائص مأخوذة من صفحة قصر سلوى في سعوديبيديا.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — قصر سلوى",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/قصر-سلوى",
+          "supports": [
+            "الموقع",
+            "مقر الحكم",
+            "تاريخ البناء",
+            "المساحة",
+            "الوحدات"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imam_mohammed_bin_saud",
+      "name": "الإمام محمد بن سعود",
+      "type": "historical_person",
+      "region": "الدرعية",
+      "aliases": [
+        "محمد بن سعود",
+        "Imam Muhammad bin Saud"
+      ],
+      "tags": [
+        "الإمام محمد بن سعود",
+        "الدرعية",
+        "الدولة السعودية الأولى",
+        "1727",
+        "يوم التأسيس"
+      ],
+      "short_description": "مؤسس الدولة السعودية الأولى وأول حكامها، بدأ حكمه في الدرعية عام 1727م.",
+      "facts": [
+        "ولد الإمام محمد بن سعود في الدرعية عام 1090هـ/1679م.",
+        "أسس الدولة السعودية الأولى عام 1139هـ/1727م.",
+        "كانت الدرعية مركز حكمه وعاصمة الدولة السعودية الأولى.",
+        "حكم الدرعية والدولة السعودية الأولى حتى عام 1179هـ/1765م."
+      ],
+      "related": [
+        "diriyah",
+        "first_saudi_state",
+        "founding_day_saudi"
+      ],
+      "retrieval_terms": [
+        "الإمام محمد بن سعود",
+        "محمد بن سعود",
+        "Imam Muhammad bin Saud",
+        "الدرعية",
+        "الدولة السعودية الأولى",
+        "1727",
+        "يوم التأسيس"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الحقائق مأخوذة من صفحة الدولة السعودية الأولى في سعوديبيديا.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — الدولة السعودية الأولى",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/الدولة-السعودية-الأولى",
+          "supports": [
+            "المؤسس",
+            "1727",
+            "الدرعية",
+            "فترة الحكم"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first_saudi_state",
+      "name": "الدولة السعودية الأولى",
+      "type": "historical_state",
+      "region": "الدرعية",
+      "aliases": [
+        "الدولة الأولى",
+        "First Saudi State"
+      ],
+      "tags": [
+        "الدولة السعودية الأولى",
+        "الدرعية",
+        "1727",
+        "1818",
+        "الإمام محمد بن سعود"
+      ],
+      "short_description": "الدولة التي أسسها الإمام محمد بن سعود عام 1727م واتخذت الدرعية عاصمة لها.",
+      "facts": [
+        "أسس الإمام محمد بن سعود الدولة السعودية الأولى عام 1139هـ/1727م.",
+        "اتخذت الدولة السعودية الأولى الدرعية عاصمة لها.",
+        "استمرت الدولة من عام 1727م حتى عام 1818م.",
+        "تعاقب على حكمها أربعة أئمة من آل سعود.",
+        "كان قصر سلوى في حي الطريف مقرًا للحكم في مرحلة من تاريخها."
+      ],
+      "related": [
+        "diriyah",
+        "imam_mohammed_bin_saud",
+        "salwa_palace",
+        "founding_day_saudi"
+      ],
+      "retrieval_terms": [
+        "الدولة السعودية الأولى",
+        "الدولة الأولى",
+        "First Saudi State",
+        "الدرعية",
+        "1727",
+        "1818",
+        "الإمام محمد بن سعود"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "التأسيس والعاصمة والمدة والحكام مستندة إلى سعوديبيديا.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — الدولة السعودية الأولى",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/الدولة-السعودية-الأولى",
+          "supports": [
+            "التأسيس",
+            "العاصمة",
+            "المدة",
+            "الحكام",
+            "قصر سلوى"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "founding_day_saudi",
+      "name": "يوم التأسيس السعودي",
+      "type": "national_occasion",
+      "region": "المملكة العربية السعودية",
+      "aliases": [
+        "يوم التأسيس",
+        "Founding Day"
+      ],
+      "tags": [
+        "يوم التأسيس",
+        "22 فبراير",
+        "1727",
+        "الإمام محمد بن سعود",
+        "الدرعية"
+      ],
+      "short_description": "مناسبة وطنية سعودية تستحضر تأسيس الدولة السعودية الأولى عام 1727م على يد الإمام محمد بن سعود.",
+      "facts": [
+        "يوافق يوم التأسيس 22 فبراير من كل عام.",
+        "يرتبط يوم التأسيس بتأسيس الدولة السعودية الأولى عام 1139هـ/1727م.",
+        "مؤسس الدولة السعودية الأولى هو الإمام محمد بن سعود.",
+        "كانت الدرعية عاصمة التأسيس."
+      ],
+      "related": [
+        "imam_mohammed_bin_saud",
+        "first_saudi_state",
+        "diriyah"
+      ],
+      "retrieval_terms": [
+        "يوم التأسيس السعودي",
+        "يوم التأسيس",
+        "Founding Day",
+        "22 فبراير",
+        "1727",
+        "الإمام محمد بن سعود",
+        "الدرعية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "مطابق لصفحة يوم التأسيس السعودي في سعوديبيديا.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — يوم التأسيس السعودي",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/يوم-التأسيس-السعودي",
+          "supports": [
+            "22 فبراير",
+            "1727",
+            "الإمام محمد بن سعود",
+            "الدرعية"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "king_abdulaziz",
+      "name": "الملك عبدالعزيز بن عبدالرحمن آل سعود",
+      "type": "historical_person",
+      "region": "المملكة العربية السعودية",
+      "aliases": [
+        "الملك عبدالعزيز",
+        "عبدالعزيز آل سعود",
+        "King Abdulaziz",
+        "ابن سعود"
+      ],
+      "tags": [
+        "الملك عبدالعزيز",
+        "مؤسس المملكة",
+        "توحيد المملكة",
+        "استعادة الرياض",
+        "1932"
+      ],
+      "short_description": "مؤسس المملكة العربية السعودية وموحدها وأول ملوكها.",
+      "facts": [
+        "الملك عبدالعزيز بن عبدالرحمن آل سعود هو مؤسس المملكة العربية السعودية وموحدها وأول ملوكها.",
+        "ولد في الرياض في أواخر القرن التاسع عشر الميلادي.",
+        "استعاد الرياض عام 1319هـ/1902م.",
+        "قاد مراحل توحيد البلاد حتى إعلان اسم المملكة العربية السعودية عام 1351هـ/1932م.",
+        "استمر حكمه حتى وفاته عام 1373هـ/1953م."
+      ],
+      "related": [
+        "recapture_riyadh",
+        "unification_saudi_arabia",
+        "saudi_national_day",
+        "masmak_palace"
+      ],
+      "retrieval_terms": [
+        "الملك عبدالعزيز بن عبدالرحمن آل سعود",
+        "الملك عبدالعزيز",
+        "عبدالعزيز آل سعود",
+        "King Abdulaziz",
+        "ابن سعود",
+        "مؤسس المملكة",
+        "توحيد المملكة",
+        "استعادة الرياض",
+        "1932"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "الدور التاريخي ومراحل التوحيد مستندان إلى سعوديبيديا ودارة الملك عبدالعزيز ضمن مصادرها.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — عبدالعزيز بن عبدالرحمن آل سعود",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/عبدالعزيز-بن-عبدالرحمن-آل-سعود",
+          "supports": [
+            "التعريف",
+            "التأسيس",
+            "الحكم"
+          ]
+        },
+        {
+          "source_name": "سعوديبيديا — توحيد المملكة العربية السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/توحيد-المملكة-العربية-السعودية",
+          "supports": [
+            "استعادة الرياض",
+            "التوحيد",
+            "إعلان المملكة"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recapture_riyadh",
+      "name": "معركة استعادة الرياض",
+      "type": "historical_event",
+      "region": "الرياض",
+      "aliases": [
+        "استعادة الرياض",
+        "فتح الرياض",
+        "Recapture of Riyadh"
+      ],
+      "tags": [
+        "استعادة الرياض",
+        "1902",
+        "الملك عبدالعزيز",
+        "قصر المصمك",
+        "الرياض"
+      ],
+      "short_description": "الحدث الذي استعاد فيه الملك عبدالعزيز مدينة الرياض عام 1902م، وانطلقت بعده مرحلة توحيد المملكة.",
+      "facts": [
+        "وقعت معركة استعادة الرياض في شهر شوال 1319هـ/يناير 1902م.",
+        "قاد الملك عبدالعزيز عملية استعادة الرياض.",
+        "ارتبطت المعركة بقصر المصمك في مدينة الرياض.",
+        "مثلت استعادة الرياض بداية مرحلة توحيد المملكة العربية السعودية."
+      ],
+      "related": [
+        "king_abdulaziz",
+        "masmak_palace",
+        "unification_saudi_arabia"
+      ],
+      "retrieval_terms": [
+        "معركة استعادة الرياض",
+        "استعادة الرياض",
+        "فتح الرياض",
+        "Recapture of Riyadh",
+        "1902",
+        "الملك عبدالعزيز",
+        "قصر المصمك",
+        "الرياض"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "استُخدمت صياغة الشهر والسنة لتجنب اختلاف بعض المصادر في تحويل اليوم الميلادي.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — معركة استعادة الرياض",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/معركة-استعادة-الرياض",
+          "supports": [
+            "الحدث",
+            "الملك عبدالعزيز",
+            "المصمك",
+            "بداية التوحيد"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unification_saudi_arabia",
+      "name": "توحيد المملكة العربية السعودية",
+      "type": "historical_event",
+      "region": "المملكة العربية السعودية",
+      "aliases": [
+        "توحيد المملكة",
+        "تأسيس المملكة العربية السعودية",
+        "Unification of Saudi Arabia"
+      ],
+      "tags": [
+        "توحيد المملكة",
+        "1932",
+        "الملك عبدالعزيز",
+        "23 سبتمبر",
+        "المملكة العربية السعودية"
+      ],
+      "short_description": "المسيرة التي قادها الملك عبدالعزيز وانتهت بإعلان توحيد البلاد وتسميتها المملكة العربية السعودية عام 1932م.",
+      "facts": [
+        "بدأت مراحل التوحيد بعد استعادة الرياض عام 1902م.",
+        "قاد الملك عبدالعزيز بن عبدالرحمن آل سعود مسيرة التوحيد.",
+        "صدر أمر ملكي بإعلان توحيد البلاد وتسميتها المملكة العربية السعودية في سبتمبر 1932م.",
+        "بدأ العمل باسم المملكة العربية السعودية في 23 سبتمبر 1932م.",
+        "أصبحت الرياض عاصمة المملكة العربية السعودية."
+      ],
+      "related": [
+        "king_abdulaziz",
+        "recapture_riyadh",
+        "saudi_national_day"
+      ],
+      "retrieval_terms": [
+        "توحيد المملكة العربية السعودية",
+        "توحيد المملكة",
+        "تأسيس المملكة العربية السعودية",
+        "Unification of Saudi Arabia",
+        "1932",
+        "الملك عبدالعزيز",
+        "23 سبتمبر",
+        "المملكة العربية السعودية"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "التواريخ والاسم والعاصمة مستندة إلى سعوديبيديا ومصادرها الرسمية.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — توحيد المملكة العربية السعودية",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/توحيد-المملكة-العربية-السعودية",
+          "supports": [
+            "1902",
+            "1932",
+            "الاسم الرسمي",
+            "العاصمة"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saudi_national_day",
+      "name": "اليوم الوطني السعودي",
+      "type": "national_occasion",
+      "region": "المملكة العربية السعودية",
+      "aliases": [
+        "اليوم الوطني",
+        "Saudi National Day",
+        "23 سبتمبر"
+      ],
+      "tags": [
+        "اليوم الوطني",
+        "23 سبتمبر",
+        "1932",
+        "توحيد المملكة",
+        "الملك عبدالعزيز"
+      ],
+      "short_description": "اليوم السنوي الذي يوافق 23 سبتمبر ويحيي ذكرى إعلان توحيد المملكة العربية السعودية وتسميتها بهذا الاسم عام 1932م.",
+      "facts": [
+        "يوافق اليوم الوطني السعودي 23 سبتمبر من كل عام.",
+        "يرتبط اليوم الوطني بإعلان توحيد المملكة العربية السعودية عام 1351هـ/1932م.",
+        "صدر مرسوم ملكي بتسمية البلاد المملكة العربية السعودية.",
+        "الملك عبدالعزيز بن عبدالرحمن آل سعود هو قائد مسيرة التوحيد."
+      ],
+      "related": [
+        "unification_saudi_arabia",
+        "king_abdulaziz"
+      ],
+      "retrieval_terms": [
+        "اليوم الوطني السعودي",
+        "اليوم الوطني",
+        "Saudi National Day",
+        "23 سبتمبر",
+        "1932",
+        "توحيد المملكة",
+        "الملك عبدالعزيز"
+      ],
+      "answer_policy": "facts_only",
+      "verification_status": "verified",
+      "verification_level": "A",
+      "verification_note": "مطابق لصفحة اليوم الوطني السعودي في سعوديبيديا.",
+      "sources": [
+        {
+          "source_name": "سعوديبيديا — اليوم الوطني السعودي",
+          "source_type": "Saudi national knowledge platform",
+          "source_url": "https://saudipedia.com/اليوم-الوطني-السعودي",
+          "supports": [
+            "23 سبتمبر",
+            "1932",
+            "التوحيد",
+            "الملك عبدالعزيز"
+          ]
+        }
+      ]
+    }
+  ]
+}
