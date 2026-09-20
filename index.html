@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>راوية | حكايات السعودية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec;
+  --paper:#fffdfa;
+  --paper-2:#f2ece3;
+  --ink:#191715;
+  --text:#312b25;
+  --muted:#766f68;
+  --line:#e8dfd3;
+  --bronze:#aa7a45;
+  --bronze-dark:#81572d;
+  --charcoal:#1f1a17;
+  --soft:#efe7dc;
+  --soft-2:#f9f6f1;
+  --radius:24px;
+  --radius-lg:34px;
+  --shadow:0 18px 50px rgba(35,26,18,.08);
+  --shadow-soft:0 10px 24px rgba(35,26,18,.05);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 8% 3%, rgba(170,122,69,.07), transparent 26%),
+    radial-gradient(circle at 91% 19%, rgba(129,87,45,.06), transparent 22%),
+    var(--bg);
+  color:var(--text);
+  font-family:"Noto Sans Arabic", system-ui, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+button,input{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+.shell{width:min(1180px, calc(100% - 36px)); margin:auto}
+
+.topbar{
+  position:sticky; top:0; z-index:90;
+  background:rgba(247,243,236,.88);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(25,23,21,.06);
+}
+.nav{
+  min-height:78px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:28px;
+}
+
+
+
+
+
+
+.navlinks{display:flex;justify-content:center;gap:28px;align-items:center}
+.navlinks a{
+  position:relative;
+  color:#554f49;font-size:13px;font-weight:700;
+  padding:28px 0 24px;
+}
+.navlinks a:after{
+  content:"";position:absolute;inset-inline:0;bottom:18px;height:1.5px;
+  background:linear-gradient(90deg,var(--bronze),transparent);
+  transform:scaleX(0);transform-origin:right;transition:.2s ease;
+}
+.navlinks a:hover{color:var(--bronze-dark)}
+.navlinks a:hover:after{transform:scaleX(1)}
+.cta{
+  border:0;background:var(--charcoal);color:white;
+  height:44px;padding:0 18px;border-radius:12px;font-weight:800
+}
+
+.hero{
+  position:relative;
+  margin-top:28px;
+  border:1px solid var(--line);
+  background:linear-gradient(135deg, #fcfaf6 0%, #f7f1e8 58%, #f1e8dd 100%);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.hero-grid{
+  min-height:650px;
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+}
+.hero-copy{
+  padding:70px 50px 62px;
+  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  position:relative;z-index:2;
+}
+.kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  color:var(--bronze);font-size:12px;font-weight:800;margin-bottom:20px;
+}
+.kicker:before{content:"";width:28px;height:1px;background:var(--bronze)}
+.hero h1{
+  margin:0 0 18px;
+  font-family:"Noto Kufi Arabic";
+  font-size:clamp(42px,5vw,68px);
+  line-height:1.34;
+  letter-spacing:-.035em;
+  color:var(--ink);
+  font-weight:700;
+}
+.hero h1 span{color:var(--bronze-dark)}
+.hero p{
+  margin:0 0 28px;
+  max-width:620px;
+  line-height:2;
+  color:#625b55;
+  font-size:15px;
+}
+.askbox{
+  width:min(100%, 660px);
+  display:flex;gap:8px;
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(25,23,21,.08);
+  border-radius:18px;padding:8px;
+  box-shadow:var(--shadow-soft);
+  
+}
+
+.askbox input{
+  flex:1;min-width:0;border:0;outline:0;background:transparent;
+  color:var(--text);padding:0 12px;font-size:14px;
+}
+.askbox input::placeholder{color:#9a948d}
+.askbox button{
+  border:0;background:var(--charcoal);color:white;
+  height:48px;padding:0 18px;border-radius:12px;font-weight:800
+}
+
+
+.hero-identity{
+  position:relative;
+  display:flex;align-items:flex-end;justify-content:center;
+  padding:14px 10px 0;
+  min-width:0;
+}
+.hero-identity:before{
+  content:"";position:absolute;
+  width:88%;aspect-ratio:1/1;border-radius:50%;
+  top:52%;left:50%;transform:translate(-50%,-50%);
+  background:
+    radial-gradient(circle, rgba(170,122,69,.13), rgba(170,122,69,.05) 38%, rgba(170,122,69,0) 70%);
+  filter:blur(2px);
+}
+.hero-identity:after{
+  content:"";position:absolute;inset:9% 7% 5% 7%;
+  border-radius:36px;
+  background:linear-gradient(180deg, rgba(255,255,255,.42), rgba(255,255,255,.18));
+  border:1px solid rgba(255,255,255,.45);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.25);
+}
+.identity-wrap{
+  position:relative;z-index:2;
+  width:min(100%, 680px);height:100%;
+  display:flex;align-items:flex-end;justify-content:center;
+}
+.identity-wrap img{
+  max-width:108%;max-height:98%;
+  object-fit:contain;display:block;
+  filter:drop-shadow(0 22px 42px rgba(53,37,24,.12));
+}
+
+
+.identity-note{
+  position:absolute;z-index:3;
+  bottom:26px;left:26px;
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(255,255,255,.7);
+  border-radius:16px;padding:12px 14px;
+  box-shadow:var(--shadow-soft)
+}
+.identity-note b{display:block;color:var(--ink);font-size:12px}
+.identity-note span{font-size:10px;color:var(--muted)}
+
+.section{padding:96px 0}
+.section-head{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:32px;align-items:end;margin-bottom:40px;
+}
+.section-head .small{font-size:11px;color:var(--bronze);font-weight:800;margin-bottom:8px}
+.section-head h2{
+  font-family:"Noto Kufi Arabic";
+  font-size:clamp(28px,3vw,42px);
+  line-height:1.5;margin:0;color:var(--ink)
+}
+.section-head p{margin:0;color:var(--muted);line-height:2;max-width:560px;justify-self:end}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  border:1px solid var(--line);background:var(--paper);
+  border-radius:26px;overflow:hidden;text-align:right;padding:0;
+  box-shadow:var(--shadow-soft);transition:.22s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(35,26,18,.08)}
+.card-visual{height:240px;position:relative;overflow:hidden;background:#ddd}
+.card-visual svg{width:100%;height:100%;display:block}
+.card-body{padding:20px 20px 22px}
+.card-body h3{margin:0 0 8px;font-family:"Noto Kufi Arabic";font-size:18px;color:var(--ink)}
+.card-body p{margin:0 0 14px;font-size:12px;line-height:1.95;color:var(--muted)}
+.card-body span{font-size:12px;color:var(--bronze-dark);font-weight:800}
+
+.story{display:none}
+.story.active{display:block}
+.story-wrap{
+  display:grid;grid-template-columns:.92fr 1.08fr;
+  overflow:hidden;border-radius:30px;background:var(--charcoal);color:white;
+  box-shadow:var(--shadow)
+}
+.story-visual{
+  min-height:520px;position:relative;
+  background:linear-gradient(180deg, #caa478, #b18052);
+}
+.story-visual svg{width:100%;height:100%;display:block}
+.story-copy{
+  padding:54px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.story-copy .small{font-size:11px;color:#e1c394;font-weight:800;margin-bottom:9px}
+.story-copy h3{font-family:"Noto Kufi Arabic";font-size:34px;line-height:1.5;margin:0 0 14px;color:white}
+.story-copy p{margin:0 0 20px;color:#d8d2ca;line-height:2.1}
+.progress{display:flex;gap:6px;margin:0 0 18px}
+.progress i{height:4px;flex:1;background:rgba(255,255,255,.14);border-radius:999px}
+.progress i.on{background:#c99b62}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.fact{border:1px solid rgba(255,255,255,.17);border-radius:999px;padding:8px 10px;font-size:10px;color:#ece6dd}
+.story-actions{display:flex;gap:8px;flex-wrap:wrap}
+.story-actions button{height:44px;border-radius:12px;padding:0 15px;font-weight:800}
+.next{border:0;background:#f7f2ea;color:var(--charcoal)}
+.restart{border:1px solid rgba(255,255,255,.22);background:transparent;color:white}
+.sources{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12)}
+.sources b{display:block;font-size:10px;color:#e0b984;margin-bottom:6px}
+.sources span{display:block;font-size:10px;color:#aaa49d;line-height:1.9}
+.related{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.related-label{width:100%;font-size:10px;color:#dfbe90;font-weight:800}
+.related button{
+  border:1px solid rgba(255,255,255,.17);background:rgba(255,255,255,.04);color:white;
+  border-radius:10px;padding:8px 11px;font-size:11px
+}
+
+.trust{
+  display:grid;grid-template-columns:1.06fr .94fr;gap:18px;align-items:stretch
+}
+.trust-copy{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:26px;padding:34px;box-shadow:var(--shadow-soft)
+}
+.trust-copy h3{font-family:"Noto Kufi Arabic";font-size:24px;margin:0 0 12px;color:var(--ink)}
+.trust-copy p{margin:0;color:var(--muted);line-height:2}
+.graph{
+  margin-top:18px;background:var(--soft-2);border:1px solid var(--line);
+  border-radius:20px;padding:26px;display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap
+}
+.node{padding:11px 14px;border-radius:12px;background:var(--soft);font-size:11px;font-weight:800;color:#4b4035}
+.arrow{color:var(--bronze);font-size:18px}
+
+.source-list{display:grid;gap:10px}
+.source-item{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:17px 18px;
+  box-shadow:var(--shadow-soft)
+}
+.source-item b{font-size:13px;color:var(--ink)}
+.source-item span{font-size:10px;color:var(--bronze);font-weight:800}
+
+.footer{padding:46px 0 54px;text-align:center;color:var(--muted);font-size:11px}
+.footer img{height:76px;width:auto;display:block;margin:0 auto 10px}
+.footer strong{display:block;color:var(--ink);margin-bottom:6px;font-family:"Noto Kufi Arabic"}
+
+@media (max-width:940px){
+  .nav{grid-template-columns:auto auto;justify-content:space-between}
+  .navlinks{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:54px 30px 34px}
+  .hero-identity{min-height:560px;padding-top:0}
+  .hero-identity:after{inset:7% 8% 6% 8%}
+  .cards{grid-template-columns:1fr}
+  .story-wrap{grid-template-columns:1fr}
+  .story-visual{min-height:320px}
+  .section-head{grid-template-columns:1fr}
+  .section-head p{justify-self:auto}
+  .trust{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .shell{width:min(100% - 22px, 1180px)}
+  .hero{margin-top:14px;border-radius:24px}
+  .hero-copy{padding:38px 20px 24px}
+  .hero h1{font-size:38px}
+  .askbox{flex-direction:column}
+  .askbox button{width:100%}
+  .hero-identity{min-height:430px;padding:0 8px}
+  
+  
+  .identity-note{bottom:18px;left:18px}
+  .section{padding:66px 0}
+  .story-copy{padding:32px 22px}
+  .story-copy h3{font-size:28px}
+}
+
+.nav > img{
+  height:58px;
+  width:auto;
+  display:block;
+  justify-self:start;
+}
+
+
+/* ===== Refined Rawiyah hero balance ===== */
+.hero-grid{
+  min-height:610px;
+  grid-template-columns:1fr 1fr;
+}
+.hero-copy{
+  padding:64px 52px 58px;
+}
+.hero-identity{
+  min-height:610px;
+  padding:20px 24px 0;
+  overflow:hidden;
+}
+.hero-identity:before{
+  width:76%;
+  top:52%;
+}
+.hero-identity:after{
+  inset:8% 8% 6% 8%;
+  border-radius:30px;
+}
+.identity-wrap{
+  width:100%;
+  height:100%;
+  align-items:flex-end;
+  justify-content:center;
+}
+.identity-wrap img{
+  width:auto;
+  height:91%;
+  max-width:92%;
+  max-height:none;
+  object-fit:contain;
+  object-position:center bottom;
+  filter:drop-shadow(0 20px 34px rgba(53,37,24,.12));
+}
+@media(max-width:940px){
+  .hero-grid{min-height:auto}
+  .hero-identity{min-height:500px}
+  .identity-wrap img{height:92%;max-width:88%}
+}
+@media(max-width:640px){
+  .hero-identity{min-height:390px;padding:12px 12px 0}
+  .identity-wrap img{height:90%;max-width:94%}
+}
+.rawiyah-answer{
+  margin-top:18px;
+  width:min(100%,660px);
+  padding:20px;
+  background:#fffdfa;
+  border:1px solid #e8dfd3;
+  border-radius:18px;
+  box-shadow:0 10px 24px rgba(35,26,18,.05);
+}
+
+/* هنا مباشرة حطي الحركة */
+.rawiyah-answer{
+  opacity:0;
+  transform:translateY(14px) scale(.985);
+  transition:
+    opacity .35s ease,
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.rawiyah-answer.show{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  box-shadow:0 16px 34px rgba(35,26,18,.09);
+}
+
+/* أزرار إجابة راوية */
+.answer-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-top:16px;
+}
+
+.answer-actions button{
+  min-height:46px;
+  padding:0 18px;
+  border-radius:12px;
+  font-weight:800;
+  transition:.18s ease;
+}
+
+#playAnswer{
+  border:1px solid #cfc6bb;
+  background:#fff;
+  color:var(--charcoal);
+}
+
+#playAnswer:hover{
+  border-color:#bda98f;
+  transform:translateY(-1px);
+}
+
+.story-jump{
+  display:none;
+  border:0;
+  background:var(--charcoal);
+  color:#fff;
+}
+
+.story-jump.show{display:inline-flex;align-items:center;justify-content:center;}
+.story-jump:hover{transform:translateY(-1px);filter:brightness(1.08);}
+
+
+
+
+/* ===== Hero النهائي: راوية كبيرة يسار + المحتوى يمين ===== */
+.hero-grid{
+  min-height:650px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  direction:rtl;
+}
+
+.hero-copy{
+  grid-column:1;
+  padding:64px 52px 58px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  position:relative;
+  z-index:2;
+}
+
+.hero-identity{
+  grid-column:2;
+  position:relative;
+  min-height:650px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:16px 18px 0;
+  overflow:hidden;
+}
+
+.hero-identity:before{
+  width:82%;
+  top:53%;
+}
+
+.hero-identity:after{
+  inset:7% 7% 5% 7%;
+  border-radius:32px;
+}
+
+.identity-wrap{
+  position:relative;
+  z-index:2;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.identity-wrap img{
+  display:block;
+  width:auto;
+  height:96%;
+  max-width:98%;
+  max-height:none;
+  object-fit:contain;
+  object-position:center bottom;
+  filter:drop-shadow(0 22px 42px rgba(53,37,24,.13));
+}
+
+/* صندوق الإجابة وأزراره */
+.rawiyah-answer{
+  width:min(100%,660px);
+}
+
+.answer-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-top:16px;
+}
+
+.answer-actions button{
+  min-height:46px;
+  padding:0 18px;
+  border-radius:12px;
+  font-weight:800;
+  transition:.18s ease;
+}
+
+#playAnswer{
+  border:1px solid #cfc6bb;
+  background:#fff;
+  color:var(--charcoal);
+}
+
+#goToStoryBtn{
+  border:0;
+  background:var(--charcoal);
+  color:#fff;
+}
+
+.story-jump{display:none;}
+.story-jump.show{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media(max-width:940px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+  .hero-copy{
+    grid-column:1;
+    grid-row:1;
+    padding:52px 30px 32px;
+  }
+  .hero-identity{
+    grid-column:1;
+    grid-row:2;
+    min-height:520px;
+    padding:8px 16px 0;
+  }
+  .identity-wrap img{
+    height:94%;
+    max-width:92%;
+  }
+}
+
+@media(max-width:640px){
+  .hero-copy{padding:38px 20px 24px;}
+  .hero-identity{min-height:410px;}
+  .identity-wrap img{
+    height:92%;
+    max-width:96%;
+  }
+  .answer-actions{
+    align-items:stretch;
+  }
+  .answer-actions button{
+    flex:1 1 170px;
+  }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="shell nav">
+    <img src="assets/logo.png" alt="شعار راوية">
+    <nav class="navlinks" aria-label="روابط رئيسية">
+      <a href="#discover">اكتشف</a>
+      <a href="#storySection">الرواية</a>
+      <a href="#trust">المصادر</a>
+    </nav>
+    <button class="cta" id="startBtn" type="button">ابدأ الرواية</button>
+  </div>
+</header>
+
+<main id="home">
+  <section class="shell hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="kicker">منصة ثقافية سعودية ذكية</div>
+        <h1>لكل مكان رواية…<br><span>وراوية تحكيها لك.</span></h1>
+        <p>اكتشف المواقع والأحداث والتراث السعودي من خلال حكايات قصيرة، مترابطة، وموثقة — في تجربة بسيطة، راقية، وسهلة العرض في الديمو.</p>
+        <form class="askbox" id="askForm">
+          <input id="askInput" placeholder="مثال: احكي لي قصة الدرعية">
+          <button type="submit">اسأل راوية</button>
+        </form>
+        <div id="rawiyahAnswer" class="rawiyah-answer" style="display:none;">
+  <div class="answer-label">رواية</div>
+
+  <p id="answerText"></p>
+
+  <div class="answer-actions">
+    <button id="playAnswer" type="button">
+      🔊 استمع للرواية
+    </button>
+
+    <button id="goToStoryBtn" class="story-jump" type="button">
+      انتقل إلى الحكاية ←
+    </button>
+  </div>
+
+  <audio id="answerAudio"></audio>
+</div>
+      </div>
+
+      <div class="hero-identity">
+<div class="identity-wrap">
+          <img src="assets/rawiyah.png" alt="هوية راوية">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell section" id="discover">
+    <div class="section-head">
+      <div>
+        <div class="small">اكتشف رواية</div>
+        <h2>ابدأ من مكان،<br>أو حدث، أو موروث.</h2>
+      </div>
+    </div>
+
+    <div class="cards">
+      <button class="card" data-topic="diriyah">
+        <div class="card-visual">
+          <svg viewBox="0 0 600 360" role="img" aria-label="تصوير فني للدرعية">
+            <defs>
+              <linearGradient id="d1" x1="0" x2="1">
+                <stop stop-color="#bd9366"/><stop offset="1" stop-color="#ead4b4"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="360" fill="url(#d1)"/>
+            <circle cx="500" cy="72" r="42" fill="#f8e7c8" opacity=".72"/>
+            <path d="M0 268 C110 234 202 248 290 222 C387 194 485 208 600 184 V360 H0Z" fill="#9a714c" opacity=".28"/>
+            <g fill="#886145">
+              <rect x="78" y="165" width="136" height="96"/>
+              <rect x="106" y="134" width="82" height="34"/>
+              <rect x="240" y="183" width="98" height="78"/>
+              <rect x="356" y="146" width="124" height="115"/>
+              <path d="M356 146h124l-9-18h-106z"/>
+            </g>
+            <g fill="#ead6b7">
+              <rect x="120" y="195" width="22" height="32"/>
+              <rect x="391" y="179" width="25" height="36"/>
+              <rect x="430" y="179" width="25" height="36"/>
+            </g>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3>الدرعية</h3>
+          <p>من وادي حنيفة إلى مركز الحكم في الدولة السعودية الأولى.</p>
+          <span>ابدأ الرواية ←</span>
+        </div>
+      </button>
+
+      <button class="card" data-topic="masmak">
+        <div class="card-visual">
+          <svg viewBox="0 0 600 360" role="img" aria-label="تصوير فني لقصر المصمك">
+            <defs>
+              <linearGradient id="m1" x1="0" x2="1">
+                <stop stop-color="#9b6b45"/><stop offset="1" stop-color="#e0bd8c"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="360" fill="url(#m1)"/>
+            <circle cx="90" cy="70" r="42" fill="#f6d4a4" opacity=".72"/>
+            <rect x="136" y="125" width="330" height="150" fill="#835638"/>
+            <rect x="105" y="85" width="78" height="190" rx="18" fill="#754d34"/>
+            <rect x="420" y="90" width="82" height="185" rx="18" fill="#754d34"/>
+            <rect x="269" y="188" width="62" height="87" fill="#55392b"/>
+            <g fill="#d7ae79"><rect x="207" y="160" width="28" height="18"/><rect x="366" y="160" width="28" height="18"/></g>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3>قصر المصمك</h3>
+          <p>حصن في قلب الرياض ارتبط ببداية مرحلة جديدة في توحيد المملكة.</p>
+          <span>ابدأ الرواية ←</span>
+        </div>
+      </button>
+
+      <button class="card" data-topic="sadu">
+        <div class="card-visual">
+          <svg viewBox="0 0 600 360" role="img" aria-label="تصوير فني لنقوش السدو">
+            <rect width="600" height="360" fill="#5a3e34"/>
+            <g transform="translate(0 34)">
+              <path d="M0 30H600" stroke="#cc995d" stroke-width="14"/>
+              <path d="M0 94H600" stroke="#f1dfc2" stroke-width="18"/>
+              <path d="M0 158H600" stroke="#cc995d" stroke-width="14"/>
+              <path d="M0 222H600" stroke="#f1dfc2" stroke-width="18"/>
+            </g>
+            <g fill="#b87754">
+              <path d="M60 86l38-38 38 38-38 38z"/><path d="M186 86l38-38 38 38-38 38z"/>
+              <path d="M312 86l38-38 38 38-38 38z"/><path d="M438 86l38-38 38 38-38 38z"/>
+              <path d="M122 214l38-38 38 38-38 38z"/><path d="M248 214l38-38 38 38-38 38z"/>
+              <path d="M374 214l38-38 38 38-38 38z"/>
+            </g>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3>السدو</h3>
+          <p>حرفة ونقوش تحمل ذاكرة البيئة والحياة اليومية عبر الأجيال.</p>
+          <span>ابدأ الرواية ←</span>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <section class="shell section story" id="storySection">
+    <div class="section-head">
+      <div>
+        <div class="small">رحلة الرواية</div>
+        <h2 id="storyHeading">الدرعية</h2>
+      </div>
+    </div>
+
+    <div class="story-wrap">
+      <div class="story-visual" id="storyVisual"></div>
+      <div class="story-copy">
+        <div class="progress"><i></i><i></i><i></i></div>
+        <div class="small" id="chapterMeta"></div>
+        <h3 id="chapterTitle"></h3>
+        <p id="chapterText"></p>
+        <div class="facts" id="facts"></div>
+        <div class="story-actions">
+          <button class="next" id="nextBtn" type="button">كمّلي الرواية ←</button>
+          <button class="restart" id="restartBtn" type="button">من البداية</button>
+        </div>
+        <div class="sources" id="storySources"></div>
+        <div class="related" id="related"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell section" id="trust">
+    <div class="section-head">
+      <div>
+        <div class="small">المصداقية جزء من التجربة</div>
+        <h2>الرواية مبسطة،<br>والمصدر واضح.</h2>
+      </div>
+      <p>راوية لا تستبدل المصدر؛ بل تجعل الوصول إليه أسهل للمستخدم وتبني السرد فوق معلومات موثوقة وواضحة.</p>
+    </div>
+
+    <div class="trust">
+      <div class="trust-copy">
+        <h3>ليش راوية مختلفة؟</h3>
+        <p>لأنها لا تكتفي بإجابة واحدة. تبدأ من سؤال بسيط، ثم تربط المكان بالشخصية، والشخصية بالحدث، وتقترح للمستخدم أين ينتقل بعد ذلك.</p>
+        <div class="graph">
+          <span class="node">الدرعية</span><span class="arrow">←</span>
+          <span class="node">الإمام محمد بن سعود</span><span class="arrow">←</span>
+          <span class="node">الدولة السعودية الأولى</span><span class="arrow">←</span>
+          <span class="node">حي الطريف</span>
+        </div>
+      </div>
+
+      <div class="source-list">
+        <div class="source-item"><b>دارة الملك عبدالعزيز</b><span>مصدر وطني</span></div>
+        <div class="source-item"><b>هيئة تطوير بوابة الدرعية</b><span>مصدر رسمي</span></div>
+        <div class="source-item"><b>هيئة التراث</b><span>مصدر رسمي</span></div>
+        <div class="source-item"><b>UNESCO</b><span>مصدر دولي</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="shell footer">
+  <strong>راوية</strong>
+  لكل مكان رواية… وراوية ترويها لك.
+</footer>
+
+<script>
+/*
+  Rawiyah MVP
+  - الواجهة تعمل بدون Backend.
+  - بيانات الديمو الحالية موجودة داخل هذا الملف لتعمل مباشرة عند فتح index.html.
+  - نسخة البيانات المنظمة موجودة أيضًا في data/heritage.json لربطها لاحقًا بالمودل أو الـBackend.
+*/
+const VISUALS = {
+  diriyah: `<svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice">
+    <rect width="600" height="520" fill="#c7a076"/>
+    <circle cx="490" cy="90" r="52" fill="#efd7b1" opacity=".7"/>
+    <path d="M0 365C130 320 220 354 335 312C450 270 515 284 600 252V520H0Z" fill="#8f6747" opacity=".35"/>
+    <g fill="#815b40">
+      <rect x="90" y="230" width="145" height="115"/><rect x="122" y="186" width="80" height="44"/>
+      <rect x="275" y="246" width="100" height="99"/><rect x="402" y="205" width="118" height="140"/>
+    </g>
+    <g fill="#e5ceb0">
+      <rect x="136" y="262" width="24" height="35"/><rect x="435" y="237" width="24" height="38"/>
+      <rect x="474" y="237" width="24" height="38"/>
+    </g>
+  </svg>`,
+  masmak: `<svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice">
+    <rect width="600" height="520" fill="#b47c4f"/>
+    <circle cx="100" cy="85" r="48" fill="#f0c98f" opacity=".72"/>
+    <rect x="125" y="205" width="350" height="180" fill="#805536"/>
+    <rect x="95" y="145" width="86" height="240" rx="20" fill="#734b32"/>
+    <rect x="425" y="150" width="90" height="235" rx="20" fill="#734b32"/>
+    <rect x="270" y="286" width="62" height="99" fill="#503528"/>
+    <path d="M0 408H600V520H0Z" fill="#6a432d" opacity=".25"/>
+  </svg>`,
+  sadu: `<svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice">
+    <rect width="600" height="520" fill="#5d4036"/>
+    <g stroke="#d2a064"><path d="M0 80H600" stroke-width="18"/><path d="M0 220H600" stroke-width="18"/><path d="M0 360H600" stroke-width="18"/></g>
+    <g stroke="#f0dfc4"><path d="M0 145H600" stroke-width="25"/><path d="M0 290H600" stroke-width="25"/></g>
+    <g fill="#b97954">
+      <path d="M60 145l45-45 45 45-45 45z"/><path d="M220 145l45-45 45 45-45 45z"/>
+      <path d="M380 145l45-45 45 45-45 45z"/><path d="M140 290l45-45 45 45-45 45z"/>
+      <path d="M300 290l45-45 45 45-45 45z"/>
+    </g>
+  </svg>`
+};
+
+const DATA = {
+  diriyah: {
+    title: "الدرعية",
+    chapters: [
+      ["البداية","تخيّلي واديًا تحيط به المزارع والمساكن الطينية. هنا نمت الدرعية تدريجيًا حتى أصبحت مركزًا مهمًا في نجد.",["وادي حنيفة","نجد","مدينة تاريخية"]],
+      ["مدينة أصبحت دولة","في عام 1727م بدأ عهد الإمام محمد بن سعود، وارتبطت الدرعية بتأسيس الدولة السعودية الأولى لتصبح مركزًا سياسيًا بارزًا.",["1727م","الإمام محمد بن سعود","الدولة السعودية الأولى"]],
+      ["الإرث","اليوم ما زالت الدرعية تحمل هذه الذاكرة في معالمها التاريخية، ويأتي حي الطريف في قلب هذا الإرث بوصفه شاهدًا عمرانيًا مهمًا.",["حي الطريف","عمارة نجدية","تراث عالمي"]]
+    ],
+    sources: ["هيئة تطوير بوابة الدرعية","UNESCO — حي الطريف"],
+    related: [["masmak","قصر المصمك"],["sadu","السدو"]]
+  },
+  masmak: {
+    title: "قصر المصمك",
+    chapters: [
+      ["حصن في قلب الرياض","يقف المصمك في وسط الرياض القديمة كأحد أبرز معالمها التاريخية بجدرانه الطينية وأبراجه.",["الرياض","حصن طيني","معلم تاريخي"]],
+      ["لحظة مفصلية","ارتبط القصر بأحداث استرداد الرياض عام 1902م بقيادة الملك عبدالعزيز، وهي بداية مرحلة حاسمة في مسيرة التوحيد.",["1902م","الملك عبدالعزيز","استرداد الرياض"]],
+      ["ذاكرة وطنية","اليوم يُقرأ المصمك كمدخل لفهم بدايات الدولة السعودية الحديثة، لا كمبنى تاريخي فقط.",["تاريخ الرياض","بداية التوحيد","ذاكرة وطنية"]]
+    ],
+    sources: ["دارة الملك عبدالعزيز","مصادر وطنية لتاريخ قصر المصمك"],
+    related: [["diriyah","الدرعية"],["sadu","السدو"]]
+  },
+  sadu: {
+    title: "السدو",
+    chapters: [
+      ["خيوط من البيئة","السدو حرفة نسيج تقليدية نشأت من مواد البيئة المحلية واعتمدت على مهارات دقيقة في النسج والزخرفة.",["نسيج تقليدي","مواد محلية","حرفة يدوية"]],
+      ["أنماط تحكي","تحمل نقوش السدو أنماطًا هندسية مميزة مرتبطة بالبيئة والذاكرة والحياة اليومية.",["أنماط هندسية","هوية بصرية","تراث"]],
+      ["معرفة تنتقل","انتقلت مهارات السدو بين الأجيال وأصبحت جزءًا من التراث الثقافي غير المادي.",["تراث غير مادي","نقل المعرفة","أجيال"]]
+    ],
+    sources: ["UNESCO — السدو","هيئة التراث"],
+    related: [["diriyah","الدرعية"],["masmak","قصر المصمك"]]
+  }
+};
+
+let current = "diriyah";
+let chapter = 0;
+
+function openStory(topic){
+  current = DATA[topic] ? topic : "diriyah";
+  chapter = 0;
+  renderStory();
+  const sec = document.getElementById("storySection");
+  sec.classList.add("active");
+  sec.scrollIntoView({behavior:"smooth", block:"start"});
+}
+
+function renderStory(){
+  const story = DATA[current];
+  const c = story.chapters[chapter];
+  document.getElementById("storyHeading").textContent = story.title;
+  document.getElementById("storyVisual").innerHTML = VISUALS[current];
+  document.getElementById("chapterMeta").textContent = `الفصل ${chapter + 1} من 3`;
+  document.getElementById("chapterTitle").textContent = c[0];
+  document.getElementById("chapterText").textContent = c[1];
+  document.getElementById("facts").innerHTML = c[2].map(x => `<span class="fact">${x}</span>`).join("");
+  document.querySelectorAll(".progress i").forEach((el, i) => el.classList.toggle("on", i <= chapter));
+  document.getElementById("nextBtn").textContent = chapter === 2 ? "اكتشفي رواية أخرى ✦" : "كمّلي الرواية ←";
+  document.getElementById("storySources").innerHTML = "<b>المصادر</b>" + story.sources.map(x => `<span>✓ ${x}</span>`).join("");
+  document.getElementById("related").innerHTML = '<span class="related-label">وش ودك تكتشف بعدها؟</span>' +
+    story.related.map(([id, label]) => `<button type="button" data-rel="${id}">${label}</button>`).join("");
+  document.querySelectorAll("[data-rel]").forEach(btn => btn.addEventListener("click", () => openStory(btn.dataset.rel)));
+}
+
+document.querySelectorAll("[data-topic]").forEach(btn => btn.addEventListener("click", () => openStory(btn.dataset.topic)));
+document.getElementById("startBtn").addEventListener("click", () => {
+  document.getElementById("discover").scrollIntoView({behavior:"smooth"});
+});
+document.getElementById("restartBtn").addEventListener("click", () => {
+  chapter = 0;
+  renderStory();
+});
+document.getElementById("nextBtn").addEventListener("click", () => {
+  if (chapter < 2) {
+    chapter++;
+    renderStory();
+  } else {
+    openStory(DATA[current].related[0][0]);
+  }
+});
+function detectStoryTopic(question){
+  const q = question.replace(/\s+/g, " ").trim();
+
+  if (/المصمك|قصر المصمك|استرداد الرياض|1902/.test(q)) return "masmak";
+  if (/الدرعية|الطريف|وادي حنيفة|الدولة السعودية الأولى|1727/.test(q)) return "diriyah";
+  if (/السدو|نسيج|حرفة|نقوش/.test(q)) return "sadu";
+
+  return null;
+}
+
+document.getElementById("askForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const input = document.getElementById("askInput");
+  const question = input.value.trim();
+
+  if (!question) return;
+
+  const answerBox = document.getElementById("rawiyahAnswer");
+  const answerText = document.getElementById("answerText");
+  const playButton = document.getElementById("playAnswer");
+  const goToStoryButton = document.getElementById("goToStoryBtn");
+  const audio = document.getElementById("answerAudio");
+
+  // نخفي زر الانتقال أثناء تحميل الإجابة الجديدة
+  goToStoryButton.classList.remove("show");
+  goToStoryButton.onclick = null;
+
+  answerBox.style.display = "block";
+answerBox.classList.remove("show");
+answerBox.classList.add("loading");
+
+answerText.textContent = "راوية تبحث في المصادر...";
+
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    answerBox.classList.add("show");
+  });
+});
+
+  try {
+    const response = await fetch("/api/ask", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ question })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "حدث خطأ");
+    }
+
+    answerText.textContent = data.answer;
+    answerBox.classList.remove("loading");
+
+    // نستخدم topic القادم من app.py، ومعه fallback بسيط للـMVP
+    const storyTopic = (data.topic && DATA[data.topic])
+      ? data.topic
+      : detectStoryTopic(question);
+
+    if (storyTopic && DATA[storyTopic]) {
+      goToStoryButton.classList.add("show");
+      goToStoryButton.onclick = () => openStory(storyTopic);
+    } else {
+      goToStoryButton.classList.remove("show");
+      goToStoryButton.onclick = null;
+    }
+
+/* إعادة حركة بسيطة عند وصول الرواية */
+answerBox.classList.remove("show");
+
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    answerBox.classList.add("show");
+  });
+});
+
+    audio.src = data.audio_url + "?t=" + Date.now();
+
+    playButton.onclick = () => {
+      audio.play();
+    };
+
+  } catch (error) {
+    console.error(error);
+    answerText.textContent = "تعذر الحصول على الرواية حاليًا.";
+    answerBox.classList.remove("loading");
+    goToStoryButton.classList.remove("show");
+  }
+});
+</script>
+</body>
+</html>
