@@ -4,6 +4,8 @@ import re
 from pathlib import Path
 from difflib import SequenceMatcher
 
+import torch
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from llama_cpp import Llama
 
 # TTS is optional. A TTS failure must never break the text answer.
@@ -13,14 +15,15 @@ except ImportError:
     speak_rawiyah = None
 
 
-# ============================================================
+
 # Configuration
-# ============================================================
+
 
 BASE_DIR = Path(__file__).parent
 DATA_FILE = BASE_DIR / "data" / "heritage.json"
 MODEL_DIR = BASE_DIR / "models"
 MODEL_FILE = MODEL_DIR / "ALLaM-7B-Instruct-preview-Q2_K.gguf"
+ARABERT_DIR = BASE_DIR / "rawiyah-arabert"
 MODEL_DIR.mkdir(exist_ok=True)
 
 SAFE_FALLBACK = "لا أملك معلومات موثوقة كافية عن هذا الموضوع حاليًا."
@@ -33,12 +36,14 @@ MAX_GENERATION_ATTEMPTS = 2
 DEBUG_RETRIEVAL = os.getenv("RAWIYAH_DEBUG", "0") == "1"
 
 llm = None
+arabert_model = None
+arabert_tokenizer = None
 _cached_items = None
 
 
-# ============================================================
+
 # Model
-# ============================================================
+
 
 def load_model():
     global llm
@@ -67,9 +72,115 @@ def load_model():
     return llm
 
 
-# ============================================================
+
+# AraBERT question classification
+
+
+def load_arabert():
+    """
+    Load the locally fine-tuned AraBERT classifier once.
+
+    Expected labels:
+      PLACE, PERSON, EVENT, HERITAGE, OTHER
+    """
+    global arabert_model, arabert_tokenizer
+
+    if arabert_model is not None and arabert_tokenizer is not None:
+        return arabert_tokenizer, arabert_model
+
+    if not ARABERT_DIR.exists():
+        raise FileNotFoundError(
+            "لم أجد مودل AraBERT هنا:\n"
+            f"{ARABERT_DIR}\n\n"
+            "تأكدي أن مجلد rawiyah-arabert موجود داخل مجلد المشروع."
+        )
+
+    print("Loading Rawiyah AraBERT...")
+
+    arabert_tokenizer = AutoTokenizer.from_pretrained(
+        str(ARABERT_DIR),
+        local_files_only=True,
+    )
+
+    arabert_model = AutoModelForSequenceClassification.from_pretrained(
+        str(ARABERT_DIR),
+        local_files_only=True,
+    )
+
+    arabert_model.eval()
+
+    print("AraBERT ready.")
+    return arabert_tokenizer, arabert_model
+
+
+def analyze_with_arabert(question):
+    """
+    Classify the Arabic user question with AraBERT.
+
+    Returns:
+        {
+            "label": "PLACE" | "PERSON" | "EVENT" | "HERITAGE" | "OTHER",
+            "label_id": int,
+            "confidence": float
+        }
+    """
+    tokenizer, model = load_arabert()
+
+    encoded = tokenizer(
+        question,
+        return_tensors="pt",
+        truncation=True,
+        padding=True,
+        max_length=128,
+    )
+
+    with torch.no_grad():
+        outputs = model(**encoded)
+
+    probabilities = torch.softmax(outputs.logits, dim=-1)
+    confidence_tensor, predicted_tensor = torch.max(probabilities, dim=-1)
+
+    predicted_id = int(predicted_tensor.item())
+    confidence = float(confidence_tensor.item())
+
+    id2label = getattr(model.config, "id2label", {}) or {}
+    label = id2label.get(predicted_id)
+    if label is None:
+        label = id2label.get(str(predicted_id), "OTHER")
+
+    label = str(label).upper().strip()
+
+    valid_labels = {"PLACE", "PERSON", "EVENT", "HERITAGE", "OTHER"}
+    if label not in valid_labels:
+        label = "OTHER"
+
+    return {
+        "label": label,
+        "label_id": predicted_id,
+        "confidence": round(confidence, 4),
+    }
+
+
+def safe_analyze_with_arabert(question):
+    """
+    AraBERT is an NLU helper. If it fails, Rawiyah should still answer
+    through the existing trusted retrieval + ALLaM pipeline.
+    """
+    try:
+        return analyze_with_arabert(question)
+    except Exception as exc:
+        if DEBUG_RETRIEVAL:
+            print(f"[AraBERT warning] {exc}")
+        return {
+            "label": "OTHER",
+            "label_id": None,
+            "confidence": 0.0,
+        }
+
+
+
 # Data loading
-# ============================================================
+
 
 def load_heritage_data():
     global _cached_items
@@ -106,9 +217,8 @@ def load_heritage_data():
     return cleaned
 
 
-# ============================================================
+
 # Arabic normalization and tokenization
-# ============================================================
 
 def normalize_arabic(text):
     if not text:
@@ -183,9 +293,7 @@ def text_values(value):
     return values
 
 
-# ============================================================
 # Accuracy-first retrieval
-# ============================================================
 
 def item_name(item):
     return (
@@ -249,7 +357,52 @@ def _phrase_match_score(query_topic, candidate):
     return 0.0
 
 
-def score_item(question, item):
+def arabert_type_bonus(item, arabert_label):
+    """
+    Use AraBERT as a SOFT retrieval signal rather than a hard filter.
+
+    This is safer for the MVP because heritage.json may use different
+    wording for its `type` field. Exact name/entity matching still remains
+    the strongest retrieval signal.
+    """
+    if not arabert_label or arabert_label == "OTHER":
+        return 0.0
+
+    raw_type = item.get("type", "")
+    if not isinstance(raw_type, str) or not raw_type.strip():
+        return 0.0
+
+    item_type = normalize_arabic(raw_type)
+
+    type_map = {
+        "PLACE": (
+            "place", "location", "site",
+            "مكان", "موقع", "معلم", "مدينة", "قرية",
+        ),
+        "PERSON": (
+            "person", "figure", "leader",
+            "شخص", "شخصية", "ملك", "امام", "قائد",
+        ),
+        "EVENT": (
+            "event", "history", "historical event",
+            "حدث", "واقعة", "معركة", "تأسيس",
+        ),
+        "HERITAGE": (
+            "heritage", "proverb", "term", "tradition", "custom",
+            "تراث", "مثل", "مصطلح", "عادة", "تقاليد",
+        ),
+    }
+
+    candidates = type_map.get(arabert_label, ())
+    for candidate in candidates:
+        normalized_candidate = normalize_arabic(candidate)
+        if normalized_candidate and normalized_candidate in item_type:
+            return 8.0
+
+    return 0.0
+
+
+def score_item(question, item, arabert_label=None):
     q_topic = clean_user_topic(question)
     q_tokens = tokens_set(question)
     if not q_tokens:
@@ -279,11 +432,15 @@ def score_item(question, item):
         type_tokens = tokens_set(item_type)
         score += len(q_tokens & type_tokens) * 1.5
 
+    # AraBERT contributes a small type-aware boost.
+    # It never overrides exact entity matching.
+    score += arabert_type_bonus(item, arabert_label)
+
     return score
 
 
-def retrieve_items(question, items, limit=MAX_RETRIEVED_ITEMS):
-    scored = [(score_item(question, item), item) for item in items]
+def retrieve_items(question, items, limit=MAX_RETRIEVED_ITEMS, arabert_label=None):
+    scored = [(score_item(question, item, arabert_label), item) for item in items]
     scored.sort(key=lambda x: x[0], reverse=True)
     scored = [(score, item) for score, item in scored if score > 0]
 
@@ -343,9 +500,9 @@ def retrieve_items(question, items, limit=MAX_RETRIEVED_ITEMS):
     }
 
 
-# ============================================================
+
 # Evidence extraction (FACTS ONLY — no story copying)
-# ============================================================
+
 
 def _fact_strings(item):
     facts = []
@@ -446,9 +603,9 @@ def build_evidence(items):
     return "\n\n".join(blocks).strip(), all_facts, all_sources
 
 
-# ============================================================
+
 # Validation helpers
-# ============================================================
+
 
 def extract_numbers(text):
     # Arabic-Indic + Western digits, including years and simple decimal forms.
@@ -528,9 +685,9 @@ def validate_answer(answer, evidence_text):
     }
 
 
-# ============================================================
+
 # Generation
-# ============================================================
+
 
 def _call_model(system_message, user_message, max_tokens=150, temperature=0.15):
     model = load_model()
@@ -623,17 +780,26 @@ def generate_story(question, evidence_text):
     return SAFE_FALLBACK
 
 
-# ============================================================
+
 # Public question function
-# ============================================================
+
 
 def ask_rawiyah(question):
     question = (question or "").strip()
     if not question:
         return SAFE_FALLBACK
 
+    arabert_analysis = safe_analyze_with_arabert(question)
+
+    if DEBUG_RETRIEVAL:
+        print(f"[AraBERT] {arabert_analysis}")
+
     items = load_heritage_data()
-    matches, retrieval_info = retrieve_items(question, items)
+    matches, retrieval_info = retrieve_items(
+        question,
+        items,
+        arabert_label=arabert_analysis["label"],
+    )
 
     if DEBUG_RETRIEVAL:
         print(f"[Retrieval status] {retrieval_info}")
@@ -652,16 +818,31 @@ def ask_rawiyah(question):
 def ask_rawiyah_with_metadata(question):
     question = (question or "").strip()
     if not question:
-        return {"answer": SAFE_FALLBACK, "sources": [], "entities": []}
+        return {
+            "answer": SAFE_FALLBACK,
+            "sources": [],
+            "entities": [],
+            "arabert": {"label": "OTHER", "label_id": None, "confidence": 0.0},
+        }
+
+    arabert_analysis = safe_analyze_with_arabert(question)
+
+    if DEBUG_RETRIEVAL:
+        print(f"[AraBERT] {arabert_analysis}")
 
     items = load_heritage_data()
-    matches, retrieval_info = retrieve_items(question, items)
+    matches, retrieval_info = retrieve_items(
+        question,
+        items,
+        arabert_label=arabert_analysis["label"],
+    )
     if not matches:
         return {
             "answer": SAFE_FALLBACK,
             "sources": [],
             "entities": [],
             "retrieval": retrieval_info,
+            "arabert": arabert_analysis,
         }
 
     evidence_text, facts, sources = build_evidence(matches)
@@ -671,6 +852,7 @@ def ask_rawiyah_with_metadata(question):
             "sources": [],
             "entities": [item_name(x) for x in matches],
             "retrieval": retrieval_info,
+            "arabert": arabert_analysis,
         }
 
     answer = generate_story(question, evidence_text)
@@ -679,12 +861,13 @@ def ask_rawiyah_with_metadata(question):
         "sources": sources,
         "entities": [item_name(x) for x in matches],
         "retrieval": retrieval_info,
+        "arabert": arabert_analysis,
     }
 
 
-# ============================================================
+
 # TTS + terminal demo
-# ============================================================
+
 
 def maybe_speak(answer):
     if speak_rawiyah is None or answer == SAFE_FALLBACK:
