@@ -13,6 +13,41 @@ AUDIO_DIR.mkdir(exist_ok=True)
 app = Flask(__name__)
 
 
+def detect_topic(question: str):
+    """
+    يحدد الرواية الأقرب من سؤال المستخدم.
+    نستخدم مطابقة كلمات بسيطة للـMVP، ويمكن لاحقًا نقلها إلى model.py.
+    """
+    q = question.strip().lower()
+
+    topics = {
+        "masmak": [
+            "المصمك",
+            "قصر المصمك",
+            "حصن المصمك",
+        ],
+        "diriyah": [
+            "الدرعية",
+            "الطريف",
+            "حي الطريف",
+            "الدولة السعودية الأولى",
+            "محمد بن سعود",
+        ],
+        "sadu": [
+            "السدو",
+            "نسيج السدو",
+            "حرفة السدو",
+            "النقوش",
+        ],
+    }
+
+    for topic, keywords in topics.items():
+        if any(keyword in q for keyword in keywords):
+            return topic
+
+    return None
+
+
 # الواجهة
 @app.route("/")
 def home():
@@ -34,13 +69,16 @@ def audio(filename):
 # سؤال راوية
 @app.route("/api/ask", methods=["POST"])
 def ask():
-    data = request.get_json()
+    data = request.get_json() or {}
     question = data.get("question", "").strip()
 
     if not question:
         return jsonify({"error": "السؤال فارغ"}), 400
 
     try:
+        # تحديد الرواية المناسبة
+        topic = detect_topic(question)
+
         # المودل
         answer = ask_rawiyah(question)
 
@@ -52,7 +90,8 @@ def ask():
 
         return jsonify({
             "answer": answer,
-            "audio_url": "/audio/answer.mp3"
+            "audio_url": "/audio/answer.mp3",
+            "topic": topic
         })
 
     except Exception as e:
