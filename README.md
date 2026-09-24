@@ -9,7 +9,7 @@
 ## الواجهة الرئيسية
 
 <p align="center">
-  <img src="assets/HomeScreen.png" width="900" alt="الواجهة الرئيسية لراوية">
+  <img src="assets/HomeScreen2.png" width="900" alt="الواجهة الرئيسية لراوية">
 </p>
 
 ## عن راوية
